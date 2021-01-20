@@ -1,4 +1,43 @@
 #example__jumbotron {
-    background: url(./example.jpg) no-repeat center center;
+    background: url(./assets/example.jpg) no-repeat center center;
     color: white;
 }
+#home__nav {
+    background-image: url(./assets/homeBanner.jpg);
+    background-position: center 20%;
+}
+#home__jumbotron {
+    background-image: url(./assets/homeBanner.jpg);
+    background-position: center 31%;
+    color: white;
+    height: 400px;
+    border-radius: 0px 0px 5px 5px;
+}
+.remove-a-styling {
+    text-decoration: none;
+    color: inherit;
+}
+.remove-a-styling:hover {
+    text-decoration: none;
+    color: inherit;
+}
+/* #home__politicalCard {
+    background-image: url(./assets/politicsCardImg.jpg);
+    background-position: center 40%;
+    color: white;
+} */
+/* #home__personalCard {
+    background-image: url(./assets/personalCardImg.jpg);
+    background-position: center 40%;
+    color: white;
+} */
+/* #home__climateModelingCard {
+    background-image: url(./assets/modelingCardImg.jpg);
+    background-position: center 40%;
+    color: white;
+}
+#home__mechanismCard {
+    background-image: url(./assets/mechanismCardImg.jpg);
+    background-position: center 40%;
+    color: white;
+} */
