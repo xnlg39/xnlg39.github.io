@@ -21,23 +21,7 @@
     text-decoration: none;
     color: inherit;
 }
-/* #home__politicalCard {
-    background-image: url(./assets/politicsCardImg.jpg);
-    background-position: center 40%;
-    color: white;
-} */
-/* #home__personalCard {
-    background-image: url(./assets/personalCardImg.jpg);
-    background-position: center 40%;
-    color: white;
-} */
-/* #home__climateModelingCard {
-    background-image: url(./assets/modelingCardImg.jpg);
-    background-position: center 40%;
-    color: white;
+.home__card {
+    max-width: 350px;
+    height: 300px;
 }
-#home__mechanismCard {
-    background-image: url(./assets/mechanismCardImg.jpg);
-    background-position: center 40%;
-    color: white;
-} */
