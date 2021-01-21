@@ -17,7 +17,7 @@
         <title>Individuals impact on climate</title>
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-dark" id="home__nav">
+        <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
             <a class="navbar-brand" href="/">Climate</a>
             <button
                 class="navbar-toggler"
@@ -27,6 +27,7 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onClick="handleNavToggle()"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -244,5 +245,12 @@
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
         ></script>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"
+            async
+        ></script>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
