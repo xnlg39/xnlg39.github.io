@@ -10,3 +10,7 @@ $(document).ready(function () {
 function handleNavToggle() {
     $('.home__nav').toggleClass('home__nav--open');
 }
+function handleArrowClick(doc) {
+    //could add a check here to make sure it is collapsed
+    doc.classList.toggle('arrow--active');
+}
