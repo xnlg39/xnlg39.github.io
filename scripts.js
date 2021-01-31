@@ -1,10 +1,7 @@
 $(document).ready(function () {
+    $('.home__nav').toggleClass('home__nav--top', $(this).scrollTop() < 5);
     $(window).scroll(function () {
-        $('.home__nav').toggleClass(
-            'home__nav--scrolled',
-            $(this).scrollTop() >= 5
-        );
-        $('.home__nav').toggleClass('home__nav--top', $(this).scrollTop() < 50);
+        $('.home__nav').toggleClass('home__nav--top', $(this).scrollTop() < 5);
     });
 });
 function handleNavToggle() {

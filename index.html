@@ -34,10 +34,6 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active d-flex">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="climateModelingPage.html"
                             >Modeling the climate</a
@@ -117,11 +113,80 @@
                             >
                         </li>
                     </ul>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="personalImpactPage.html"
                             >Personal Impact on climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
+                            >
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </nav>
@@ -169,7 +234,7 @@
                     >
                         <img
                             src="./assets/personalCardImg.jpg"
-                            class="card-img-top"
+                            class="card-img-top card__img"
                             alt="Personal impact on climate"
                         />
                         <div class="card-body">

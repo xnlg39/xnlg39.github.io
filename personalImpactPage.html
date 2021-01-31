@@ -17,11 +17,8 @@
         <title></title>
     </head>
     <body>
-        <nav
-            class="navbar sticky-top navbar-dark"
-            style="background-color: #0096ff;"
-        >
-            <a class="navbar-brand" href="/">Climate</a>
+        <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
+            <a class="navbar-brand jumbotron__title" href="/">Climate</a>
             <button
                 class="navbar-toggler"
                 type="button"
@@ -30,6 +27,7 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onClick="handleNavToggle()"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,13 +35,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="climateModelingPage.html"
                             >Modeling the climate</a
                         >
                     </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="climateMechanismPage.html"
                             >Mechanism of climate change</a
@@ -54,27 +50,162 @@
                             >Carbon capture and Carbon offset</a
                         >
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="politicalImpactPage.html"
-                            >Political impact on climate change</a
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateActivismPage.html"
+                            >Climate activism</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseActivism"
+                            aria-expanded="false"
+                            aria-controls="collapseActivism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item active">
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#publicConsensus"
+                                >Public Consensus</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#whatCanAnIndividualDo"
+                                >What can an individual do?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#caseStudies"
+                                >Case studies</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item active d-flex">
                         <a class="nav-link" href="personalImpactPage.html"
                             >Personal Impact on climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
+                            >
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </nav>
 
         <div
-            class="jumbotron"
-            id="example__jumbotron"
+            class="jumbotron d-flex justify-content-center align-items-center"
+            id="personalImpact__jumbotron"
             style="background-color: #64a7e9;"
         >
             <h1
-                class="display-4 row justify-content-md-center jumbotron__title"
+                class="display-4 d-flex justify-content-md-center jumbotron__title"
             >
                 <strong>Personal impact on the climate</strong>
             </h1>
@@ -156,7 +287,8 @@
                     Cras interdum enim a justo aliquam porta.
                 </p>
                 <br />
-                <h3 id="energy">Energy</h3>
+                <span class="anchor" id="energy"></span>
+                <h3>Energy</h3>
                 <br />
                 <p class="text-justify">
                     Phasellus sed ex et mi consectetur auctor sit amet non
@@ -186,7 +318,8 @@
                     sagittis nisi egestas a.
                 </p>
                 <br />
-                <h3 id="heating">Heating</h3>
+                <span class="anchor" id="heating"></span>
+                <h3>Heating</h3>
                 <br />
                 <p class="text-justify">
                     Pellentesque risus justo, ullamcorper id velit eget,
@@ -213,7 +346,8 @@
                     Cras interdum enim a justo aliquam porta.
                 </p>
                 <br />
-                <h3 id="transport">Transport</h3>
+                <span class="anchor" id="transport"></span>
+                <h3>Transport</h3>
                 <br />
                 <p class="text-justify">
                     Phasellus sed ex et mi consectetur auctor sit amet non
@@ -243,7 +377,8 @@
                     sagittis nisi egestas a.
                 </p>
                 <br />
-                <h3 id="food">Food</h3>
+                <span class="anchor" id="food"></span>
+                <h3>Food</h3>
                 <br />
                 <p class="text-justify">
                     Pellentesque risus justo, ullamcorper id velit eget,
@@ -267,16 +402,17 @@
                 </h1>
             </div>
         </footer>
-
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
         ></script>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
