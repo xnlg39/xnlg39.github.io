@@ -17,10 +17,7 @@
         <title></title>
     </head>
     <body>
-        <nav
-            class="navbar sticky-top navbar-dark"
-            style="background-color: #0096ff;"
-        >
+        <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
             <a class="navbar-brand" href="/">Climate</a>
             <button
                 class="navbar-toggler"
@@ -30,40 +27,352 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onClick="handleNavToggle()"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="climateModelingPage.html"
-                            >Modeling the climate</a
-                        >
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="climateMechanismPage.html"
                             >Mechanism of climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseMechanism"
+                            aria-expanded="false"
+                            aria-controls="collapseMechanism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateModelingPage.html"
+                            >Modeling the climate</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseModeling"
+                            aria-expanded="false"
+                            aria-controls="collapseModeling"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#CurrentMethods"
+                                >Current methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#FutureMethods"
+                                >Future methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#DigitalTwins"
+                                >Digital twins</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#IsClimateChangeReal"
+                                >Is climate change real?</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="captureOffsetPage.html"
                             >Carbon capture and Carbon offset</a
                         >
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="politicalImpactPage.html"
-                            >Political impact on climate change</a
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseCarbon"
+                            aria-expanded="false"
+                            aria-controls="collapseCarbon"
+                            onclick="handleArrowClick(arrowClimateActivism)"
                         >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseCarbon"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/captureOffsetPage.html#CarbonCapture"
+                                >Carbon capture</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCarbon"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/captureOffsetPage.html#CarbonOffset"
+                                >Carbon offset</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCarbon"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/captureOffsetPage.html#Conclusion"
+                                >Conclusion</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex active">
+                        <a class="nav-link" href="climateActivismPage.html"
+                            >Climate activism</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseActivism"
+                            aria-expanded="false"
+                            aria-controls="collapseActivism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#publicConsensus"
+                                >Public Consensus</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#whatCanAnIndividualDo"
+                                >What can an individual do?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#caseStudies"
+                                >Case studies</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="personalImpactPage.html"
                             >Personal Impact on climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
+                            >
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </nav>
@@ -141,12 +450,12 @@
                 <hr />
                 <br />
                 <p class="text-justify">
-                    There are many lifestyle changes that a person can take to
+                    There are many lifestyle changes that a person can make to
                     reduce their own personal impact on the climate, however,
                     global warming is not the fault of one single individual,
-                    and nor can it be resolved through the actions of one
+                    and nor can it be resolved through the actions of one single
                     person. Large amounts of greenhouse gas emissions are caused
-                    by the decisions of corporations and governments, since 1988
+                    by the decisions of corporations and governments. Since 1988
                     one hundred of the world's largest companies have been
                     responsible for 71% of the greenhouse gas emissions [1].
                     Despite this, there are still ways that an individual can
@@ -154,91 +463,142 @@
                     which they operate.
                 </p>
                 <br />
-                <h4 id="publicConsensus">Public Consensus</h4>
+                <span class="anchor" id="publicConsensus"></span>
+                <h4>Public Consensus</h4>
                 <br />
                 <p class="text-justify">
-                    Phasellus sed ex et mi consectetur auctor sit amet non
-                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
-                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
-                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
-                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
-                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
-                    Proin tristique, dolor ac eleifend viverra, nunc augue
-                    cursus metus, quis commodo purus mauris at ligula.
-                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
-                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
-                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
-                    vulputate erat tempus vitae. Proin ultricies sodales felis
-                    non sodales. Praesent euismod sapien sit amet mi vulputate,
-                    sed volutpat turpis facilisis. Phasellus egestas dui
-                    scelerisque massa condimentum, non viverra felis consequat.
-                    Curabitur imperdiet vehicula metus, non venenatis ex
-                    placerat nec. Sed sed ornare massa.
+                    Recent opinion polls demonstrate that the public is becoming
+                    increasingly concerned about climate change and its effects.
+                    As of September 2020, 82% of people in Britain described
+                    themselves as either very concerned (38%) or fairly
+                    concerned (44%) about climate change, this was a 4% rise
+                    from March of that year [2]. 71% of the world's population
+                    believe that the threat posed by climate change is as
+                    serious a crisis as the covid-19 pandemic [3]. Concern about
+                    climate change is highest amongst young people with 46% of
+                    British 18-24-year-olds describing themselves as very
+                    concerned, this is in contrast with only 24% of people over
+                    the age of 65 [4].
                 </p>
-                <br id="whatCanAnIndividualDo" />
+                <br />
+                <span class="anchor" id="whatCanAnIndividualDo"></span>
                 <h4>What can an individual do?</h4>
                 <br />
                 <p class="text-justify">
-                    Duis facilisis sed leo nec molestie. Fusce sed viverra
-                    lectus. Praesent ex eros, tempor commodo interdum eget,
-                    pellentesque quis velit. Nullam sed lobortis elit. Sed
-                    molestie turpis auctor felis mollis faucibus. Curabitur
-                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
-                    sagittis nisi egestas a.
+                    In a democratic country if an individual is not happy about
+                    the way their government is handling climate change they can
+                    vote for a candidate or party that they believe will do a
+                    better job at tackling the issue. Voting for a political
+                    party with climate change-focused policies also sends a
+                    signal to other parties that this is an issue that is
+                    important to voters and may result in them changing their
+                    position for future elections. However for this to work and
+                    for there to be a change in a country's environmental
+                    policies requires a large number of people to share the same
+                    beliefs and have the same desire for change.
                 </p>
                 <p class="text-justify">
-                    Pellentesque risus justo, ullamcorper id velit eget,
-                    scelerisque molestie massa. In efficitur, nunc aliquet
-                    efficitur condimentum, nisi erat tristique magna, ac viverra
-                    nibh lorem id tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Maecenas in sem massa. Praesent
-                    porttitor sapien eget ante euismod, quis convallis quam
-                    condimentum. Class aptent taciti sociosqu ad litora torquent
-                    per conubia nostra, per inceptos himenaeos. Sed et nunc
-                    scelerisque, auctor tortor vel, elementum nisl. Cras
-                    placerat fringilla erat, in fringilla lorem fringilla at.
+                    Many of those who are most worried about climate change and
+                    its impact are younger people who do not yet have the right
+                    to vote and therefore can not directly have an impact on the
+                    governance of a country, yet there are still ways that they
+                    can have an impact on the democratic process. Writing to a
+                    local representative, such as an MP or congressperson, is an
+                    effective way of demonstrating to politicians that climate
+                    change is an issue that the younger generation of potential
+                    future voters is concerned about, and will hold them
+                    accountable for in future elections. Whilst not having the
+                    right to vote themselves young people do have influence over
+                    people who do, such as their parents, they can therefore
+                    persuade their parents to vote in a way that reflects their
+                    beliefs.
                 </p>
-                <br id="caseStudies" />
+                <p class="text-justify">
+                    Protesting is another method that an individual can use to
+                    exercise their democratic rights and demonstrate their
+                    displeasure towards how climate change is being tackled.
+                    Protesting comes in many forms whether that be the more
+                    peaceful Fridays for Future school strikes started by
+                    Swedish teenager Greta Thunberg or the "civil disobedience"
+                    of Extinction Rebellion [5][6].
+                </p>
+                <p class="text-justify">
+                    Protesting is another method that an individual can use to
+                    exercise their democratic rights and demonstrate their
+                    displeasure towards how climate change is being tackled.
+                    Protesting comes in many forms whether that be the more
+                    peaceful Fridays for Future school strikes started by
+                    Swedish teenager Greta Thunberg or the "civil disobedience"
+                    of Extinction Rebellion [5][6].
+                </p>
+                <br />
+                <span class="anchor" id="caseStudies"></span>
                 <h4>Case studies</h4>
                 <br />
+                <h5>Greta Thunberg - Impact of an Individual</h5>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
-                    nisi. Quisque sollicitudin posuere erat. Vivamus hendrerit
-                    tempus est sit amet sollicitudin. Vivamus convallis vitae
-                    elit et vestibulum. Nullam ac erat lorem. Fusce vel tempor
-                    odio, non ullamcorper augue. Etiam risus erat, cursus a dui
-                    eget, laoreet venenatis elit. Sed mattis massa orci, ac
-                    convallis lectus imperdiet ac. In bibendum pretium
-                    consectetur. Aliquam et neque non nulla posuere faucibus.
-                    Cras interdum enim a justo aliquam porta.
+                    Perhaps the most well known example of how an individual can
+                    have an impact on climate policy is that of the Swedish
+                    teenage activist Greta Thunberg.
                 </p>
                 <p class="text-justify">
-                    Phasellus sed ex et mi consectetur auctor sit amet non
-                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
-                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
-                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
-                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
-                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
-                    Proin tristique, dolor ac eleifend viverra, nunc augue
-                    cursus metus, quis commodo purus mauris at ligula.
-                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
-                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
-                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
-                    vulputate erat tempus vitae. Proin ultricies sodales felis
-                    non sodales. Praesent euismod sapien sit amet mi vulputate,
-                    sed volutpat turpis facilisis. Phasellus egestas dui
-                    scelerisque massa condimentum, non viverra felis consequat.
-                    Curabitur imperdiet vehicula metus, non venenatis ex
-                    placerat nec. Sed sed ornare massa.
+                    In August 2018, when she was 15, Greta Thunberg began
+                    striking from school and protesting outside the Swedish
+                    parliament building, every day for three weeks, demanding
+                    that the Swedish government honour the pledges on reducing
+                    greenhouse emissions made in the Paris Agreement
+                    <a
+                        href="https://www.theguardian.com/science/2018/sep/01/swedish-15-year-old-cutting-class-to-fight-the-climate-crisis"
+                        >(link)</a
+                    >
+
+                    From October of that year, she gave a number of high profile
+                    public speeches, including a TEDx talk in Stockholm
+                    <a
+                        href="https://www.ted.com/talks/greta_thunberg_the_disarming_case_to_act_right_now_on_climate_change"
+                        >(link)</a
+                    >
+
+                    As international media coverage on her grew she inspired a
+                    number of similar protests around the world, including
+                    school strikes attended by thousands of people in Australia
+                    during November and the first Fridays for Future march in
+                    Germany during December [Greta 3][Greta 4]. Just a few
+                    months after she began her protests, in December, she gave a
+                    speech to the COP24 United Nations Climate Change summit, in
+                    which she addressed world leaders and told them that they
+                    were "not mature enough to tell it like it is" [Greta 5]. On
+                    Friday of March 2019 over a million schoolchildren took part
+                    in climate protests in 125 different countries [Greta 6].
+                    Throughout 2019, Greta Thunberg attended various protests
+                    around Europe and gave public speeches to governments and
+                    world leaders, and in August she sailed across the Atlantic
+                    on a carbon-neutral yacht in order to attend UN climate
+                    conferences in the Americas [Greta 7]. In 2019 she was named
+                    as the youngest ever TIME person of the year [Greta 8].
                 </p>
                 <p class="text-justify">
-                    Duis facilisis sed leo nec molestie. Fusce sed viverra
-                    lectus. Praesent ex eros, tempor commodo interdum eget,
-                    pellentesque quis velit. Nullam sed lobortis elit. Sed
-                    molestie turpis auctor felis mollis faucibus. Curabitur
-                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
-                    sagittis nisi egestas a.
+                    Whilst it is difficult to measure the direct impact of Greta
+                    Thunberg's words and actions, there are some signs that she
+                    has made a difference to environmental policy across many
+                    countries, mostly in Europe. When speaking to Thunberg, in
+                    2019, then British Environment minister said that he felt
+                    "responsibility and guilt" due to her words, German
+                    chancellor Angela Merkel also said that Greta Thunberg drove
+                    her government to act on climate change [Greta 9][Greta 10].
+                    The then president of the European Commison, Jean-Claude
+                    Juncker, also announced alongside Thunberg, in 2019, that
+                    "from 2021 to 2027 every fourth euro spent within the EU
+                    budget will go towards action to mitigate climate change",
+                    this amounts to one trillion euros over seven years [Greta
+                    11]. During the European Parliament elections in May 2019,
+                    seats occupied by Green parties increased from 52 to 72,
+                    with most of this increase occuring in northern Europe,
+                    where young climate protestors were most active [Greta 12].
+                    Away from politics, a study published in 2021 demonstrates
+                    that Americans "who are more familiar with Greta Thunberg
+                    have higher intentions of taking collective actions to
+                    reduce global warming" [Greta 13].
                 </p>
                 <p class="text-justify">
                     Pellentesque risus justo, ullamcorper id velit eget,
@@ -251,6 +611,45 @@
                     per conubia nostra, per inceptos himenaeos. Sed et nunc
                     scelerisque, auctor tortor vel, elementum nisl. Cras
                     placerat fringilla erat, in fringilla lorem fringilla at.
+                </p>
+                <br />
+                <h5>Extinction Rebellion - Collective Impact</h5>
+                <p class="text-justify">
+                    Extinction Rebellion is an international environmental
+                    protest group, established mostly by British academics,
+                    which protests for change in climate policy through
+                    "nonviolent civil disobedience" [XR 1].
+                </p>
+                <p class="text-justify">
+                    The group was founded in October 2018 and launched a
+                    "declaration of rebellion" on the 31st when more than 1000
+                    protestors blocked roads around the Houses of Parliament and
+                    assembled in Parliament Square [XR 2]. On what the group
+                    called "rebellion day", on the 17th November, 6000 activists
+                    blocked access to the five main bridges across the river
+                    Thames before again marching on Parliament Square [XR 3].
+                    Throughout the remainder of 2018 and the first few months of
+                    2019, there were further disruptions across the country
+                    including an occupation of the Scottish Parliament building
+                    and attempts to disrupt London Fashion Week [XR 4][XR 5].
+                    The protests culminated in a series of occupations around
+                    London starting from the 15th of April, including blocking
+                    Waterloo Bridge for a week, activists gluing themselves to
+                    buildings, and placing a pink boat in the intersection of
+                    Oxford and Regent Street, leading to thousands of arrests
+                    [XR 6].
+                </p>
+                <p class="text-justify">
+                    The impact of the protests can be seen soon after the events
+                    of the 15th of April. At the end of the month London Mayor
+                    met with senior figures in the movement and pledged to
+                    consider a citizens assembly on climate change, which was
+                    one of the groups key demands [XR 7]. On the 1st of May the
+                    British Parliament declared a climate emergency, becoming
+                    the first country in the world to do so [XR 8]. MPs then
+                    agreed, in June, to establish a citizens aseembly, made up
+                    of a sample of the population, to discuss the climate crisis
+                    [XR 9].
                 </p>
             </div>
         </div>
@@ -265,13 +664,15 @@
 
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
         ></script>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
