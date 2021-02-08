@@ -36,6 +36,9 @@
     height: 400px;
     border-radius: 0px 0px 5px 5px;
 }
+#content {
+    max-width: 800px !important;
+}
 .anchor {
     display: block;
     height: 60px;

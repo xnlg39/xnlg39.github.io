@@ -17,10 +17,7 @@
         <title></title>
     </head>
     <body>
-        <nav
-            class="navbar sticky-top navbar-dark"
-            style="background-color: #0096ff;"
-        >
+        <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
             <a class="navbar-brand" href="/">Climate</a>
             <button
                 class="navbar-toggler"
@@ -30,40 +27,352 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onClick="handleNavToggle()"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="climateModelingPage.html"
-                            >Modeling the climate</a
-                        >
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="climateMechanismPage.html"
                             >Mechanism of climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseMechanism"
+                            aria-expanded="false"
+                            aria-controls="collapseMechanism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="captureOffsetPage.html"
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateModelingPage.html"
+                            >Modeling the climate</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseModeling"
+                            aria-expanded="false"
+                            aria-controls="collapseModeling"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#CurrentMethods"
+                                >Current methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#FutureMethods"
+                                >Future methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#DigitalTwins"
+                                >Digital twins</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#IsClimateChangeReal"
+                                >Is climate change real?</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link active" href="captureOffsetPage.html"
                             >Carbon capture and Carbon offset</a
                         >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="politicalImpactPage.html"
-                            >Political impact on climate change</a
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseCarbon"
+                            aria-expanded="false"
+                            aria-controls="collapseCarbon"
+                            onclick="handleArrowClick(arrowClimateActivism)"
                         >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseCarbon"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/captureOffsetPage.html#CarbonCapture"
+                                >Carbon capture</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCarbon"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/captureOffsetPage.html#CarbonOffset"
+                                >Carbon offset</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCarbon"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/captureOffsetPage.html#Conclusion"
+                                >Conclusion</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateActivismPage.html"
+                            >Climate activism</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseActivism"
+                            aria-expanded="false"
+                            aria-controls="collapseActivism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#publicConsensus"
+                                >Public Consensus</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#whatCanAnIndividualDo"
+                                >What can an individual do?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#caseStudies"
+                                >Case studies</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="personalImpactPage.html"
                             >Personal Impact on climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
+                            >
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </nav>
@@ -78,7 +387,7 @@
             </h1>
         </div>
 
-        <div class="container">
+        <div class="container" id="content">
             <div class="p-2">
                 <p class="text-justify" style="font-size: large;">
                     A breif summary of what this page is about and what is going
@@ -260,13 +569,15 @@
 
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
         ></script>
+        <script type="text/javascript" src="scripts.js"></script>
     </body>
 </html>
