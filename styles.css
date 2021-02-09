@@ -48,6 +48,10 @@
 #content {
     max-width: 800px !important;
 }
+#durham-badge {
+    width: 148px;
+    height: 61px;
+}
 .anchor {
     display: block;
     height: 60px;
