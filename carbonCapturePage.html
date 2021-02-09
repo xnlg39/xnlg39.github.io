@@ -14,13 +14,13 @@
         />
         <link rel="stylesheet" href="./styles.css" />
 
-        <title>Individuals impact on climate</title>
+        <title></title>
     </head>
     <body>
         <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
             <a class="navbar-brand home__nav__shadow" href="/">Climate</a>
             <button
-                class="navbar-toggler home__nav__shadow"
+                class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -34,12 +34,12 @@
                     width="30"
                     height="30"
                     fill="currentColor"
-                    class="bi bi-list home__nav__shadow"
+                    class="bi bi-chevron-down"
                     viewBox="0 0 16 16"
                 >
                     <path
                         fill-rule="evenodd"
-                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
                     />
                 </svg>
             </button>
@@ -184,81 +184,18 @@
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="carbonCapturePage.html"
-                            >Carbon capture</a
-                        >
-                        <div
-                            class="nav-link px-1"
-                            type="button"
-                            data-toggle="collapse"
-                            data-target="#collapseCapture"
-                            aria-expanded="false"
-                            aria-controls="collapseCapture"
-                            onclick="handleArrowClick(arrowClimateActivism)"
-                        >
-                            <svg
-                                id="arrowClimateActivism"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-caret-right-fill"
-                                viewBox="0 0 16 16"
-                            >
-                                <path
-                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
-                                />
-                            </svg>
-                        </div>
-                    </li>
-                    <ul class="navbar-nav ml-3">
-                        <li
-                            id="collapseCapture"
-                            class="collapse"
-                            aria-labelledby="headingTwo"
-                        >
-                            <a
-                                class="nav-link"
-                                href="/carbonCapturePage.html#CarbonCapture"
-                                >Carbon capture</a
-                            >
-                        </li>
-                        <li
-                            id="collapseCapture"
-                            class="collapse"
-                            aria-labelledby="headingTwo"
-                        >
-                            <a
-                                class="nav-link"
-                                href="/carbonCapturePage.html#CarbonOffset"
-                                >Carbon offset</a
-                            >
-                        </li>
-                        <li
-                            id="collapseCapture"
-                            class="collapse"
-                            aria-labelledby="headingTwo"
-                        >
-                            <a
-                                class="nav-link"
-                                href="/carbonCapturePage.html#Conclusion"
-                                >Conclusion</a
-                            >
-                        </li>
-                    </ul>
 
                     <li class="nav-item d-flex">
-                        <a class="nav-link" href="carbonOffsetPage.html"
-                            >Carbon offset</a
+                        <a class="nav-link active" href="captureOffsetPage.html"
+                            >Carbon capture and Carbon offset</a
                         >
                         <div
                             class="nav-link px-1"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#collapseOffset"
+                            data-target="#collapseCarbon"
                             aria-expanded="false"
-                            aria-controls="collapseOffset"
+                            aria-controls="collapseCarbon"
                             onclick="handleArrowClick(arrowClimateActivism)"
                         >
                             <svg
@@ -278,35 +215,35 @@
                     </li>
                     <ul class="navbar-nav ml-3">
                         <li
-                            id="collapseOffset"
+                            id="collapseCarbon"
                             class="collapse"
                             aria-labelledby="headingTwo"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#CarbonCapture"
+                                href="/captureOffsetPage.html#CarbonCapture"
                                 >Carbon capture</a
                             >
                         </li>
                         <li
-                            id="collapseOffset"
+                            id="collapseCarbon"
                             class="collapse"
                             aria-labelledby="headingTwo"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#CarbonOffset"
+                                href="/captureOffsetPage.html#CarbonOffset"
                                 >Carbon offset</a
                             >
                         </li>
                         <li
-                            id="collapseOffset"
+                            id="collapseCarbon"
                             class="collapse"
                             aria-labelledby="headingTwo"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#Conclusion"
+                                href="/captureOffsetPage.html#Conclusion"
                                 >Conclusion</a
                             >
                         </li>
@@ -454,112 +391,134 @@
 
         <div
             class="jumbotron"
-            id="home__jumbotron"
+            id="carbonCapture__jumbotron"
             style="background-color: #64a7e9;"
         >
             <h1
-                class="display-4 row justify-content-center mx-2 jumbotron__title"
+                class="display-4 d-flex justify-content-md-center jumbotron__title"
             >
-                <strong>
-                    Individuals impact on climate change
-                </strong>
+                <strong>Carbon capture</strong>
             </h1>
-            <p class="lead row justify-content-md-center">
-                This is a simple hero unit, a simple jumbotron-style component
-                for calling extra attention to featured content or information.
-            </p>
-            <hr class="my-4" />
         </div>
 
-        <div class="container">
-            <div class="d-flex flex-row flex-wrap justify-content-center">
-                <div class="m-2">
-                    <a
-                        class="card home__card remove-a-styling"
-                        href="climateActivismPage.html"
-                    >
-                        <img
-                            src="./assets/climateActivismCardImg.jpg"
-                            class="card-img-top"
-                            alt="climate activism"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Climate activism</h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="m-2 align-self-center">
-                    <a
-                        class="card home__card remove-a-styling"
-                        href="personalImpactPage.html"
-                    >
-                        <img
-                            src="./assets/personalCardImg.jpg"
-                            class="card-img-top card__img"
-                            alt="Personal impact on climate"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Personal impact on climate
-                            </h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="m-2 align-self-center">
-                    <a
-                        class="card home__card remove-a-styling"
-                        href="climateMechanismPage.html"
-                    >
-                        <img
-                            src="./assets/mechanismCardImg.jpg"
-                            class="card-img-top"
-                            alt="Mechanism of climate change"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Mechanism of climate change
-                            </h5>
-                        </div>
-                    </a>
-                </div>
+        <div class="container" id="content">
+            <div class="p-2">
+                <p class="text-justify" style="font-size: large;">
+                    A breif summary of what this page is about and what is going
+                    to be addressed. Basically an abstract. abstract abstract
+                    abstract abstract abstract abstract abstract abstract
+                    abstract abstract abstract abstract abstract abstract
+                    abstract abstract abstract abstract abstract abstract
+                    abstract abstract abstract abstract abstract abstract
+                    abstract abstract abstract abstract abstract abstract
+                    abstract abstract abstract abstract abstract abstract
+                    abstract abstract abstract abstract abstract.
+                </p>
+                <hr />
+                <div class="d-flex align-items-center justify-content-around">
+                    <p class="text-center m-0">By <strong>Shiji Qin</strong></p>
 
-                <div class="m-2 align-self-center">
-                    <a
-                        class="card home__card remove-a-styling"
-                        href="captureOffsetPage.html"
+                    <p class="text-center m-0 mx-2">
+                        |
+                    </p>
+                    <div
+                        class="d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="./assets/captureAndOfsetCardImg.jpg"
-                            class="card-img-top"
-                            alt="Carbon capture and carbon offset"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                Carbon capture and carbon offset
-                            </h5>
-                        </div>
-                    </a>
-                </div>
-                <div class="m-2 align-self-center">
-                    <a
-                        class="card home__card remove-a-styling"
-                        href="climateModelingPage.html"
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"
+                            />
+                        </svg>
+                        <p class="text-center m-0 px-2">20 Jan 2021</p>
+                    </div>
+
+                    <p class="fs-1 text-center m-0 mx-2">
+                        |
+                    </p>
+                    <div
+                        class="d-flex align-items-center justify-content-center"
                     >
-                        <img
-                            src="./assets/modelingCardImg.jpg"
-                            class="card-img-top"
-                            alt="Modeling the Climate"
-                        />
-                        <div class="card-body">
-                            <h5 class="card-title">Modeling the Climate</h5>
-                        </div>
-                    </a>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-clock-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                            />
+                        </svg>
+                        <p class="text-center m-0 px-2">10 min</p>
+                    </div>
                 </div>
-            </div>
-            <div class="p-4 container" id="content">
-                <h3 class="text-center py-2">
-                    What does the website aim to acheive?
-                </h3>
+                <hr />
+
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
+                    nisi. Quisque sollicitudin posuere erat. Vivamus hendrerit
+                    tempus est sit amet sollicitudin. Vivamus convallis vitae
+                    elit et vestibulum. Nullam ac erat lorem. Fusce vel tempor
+                    odio, non ullamcorper augue. Etiam risus erat, cursus a dui
+                    eget, laoreet venenatis elit. Sed mattis massa orci, ac
+                    convallis lectus imperdiet ac. In bibendum pretium
+                    consectetur. Aliquam et neque non nulla posuere faucibus.
+                    Cras interdum enim a justo aliquam porta.
+                </p>
+
+                <br />
+                <h3 id="whatIsCarbonCapture">What is carbon capture?</h3>
+                <br />
+
+                <p class="text-justify">
+                    Phasellus sed ex et mi consectetur auctor sit amet non
+                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
+                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
+                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
+                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
+                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
+                    Proin tristique, dolor ac eleifend viverra, nunc augue
+                    cursus metus, quis commodo purus mauris at ligula.
+                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
+                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
+                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
+                    vulputate erat tempus vitae. Proin ultricies sodales felis
+                    non sodales. Praesent euismod sapien sit amet mi vulputate,
+                    sed volutpat turpis facilisis. Phasellus egestas dui
+                    scelerisque massa condimentum, non viverra felis consequat.
+                    Curabitur imperdiet vehicula metus, non venenatis ex
+                    placerat nec. Sed sed ornare massa.
+                </p>
+                <p class="text-justify">
+                    Duis facilisis sed leo nec molestie. Fusce sed viverra
+                    lectus. Praesent ex eros, tempor commodo interdum eget,
+                    pellentesque quis velit. Nullam sed lobortis elit. Sed
+                    molestie turpis auctor felis mollis faucibus. Curabitur
+                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
+                    sagittis nisi egestas a.
+                </p>
+                <h3></h3>
+                <p class="text-justify">
+                    Pellentesque risus justo, ullamcorper id velit eget,
+                    scelerisque molestie massa. In efficitur, nunc aliquet
+                    efficitur condimentum, nisi erat tristique magna, ac viverra
+                    nibh lorem id tortor. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Maecenas in sem massa. Praesent
+                    porttitor sapien eget ante euismod, quis convallis quam
+                    condimentum. Class aptent taciti sociosqu ad litora torquent
+                    per conubia nostra, per inceptos himenaeos. Sed et nunc
+                    scelerisque, auctor tortor vel, elementum nisl. Cras
+                    placerat fringilla erat, in fringilla lorem fringilla at.
+                </p>
                 <p class="text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
@@ -613,40 +572,12 @@
                 </p>
             </div>
         </div>
+
         <footer>
-            <div class="jumbotron" style="background-color: #17346642;">
-                <div class="d-flex flex-wrap justify-content-between">
-                    <div class="">
-                        <ul>
-                            <strong>Further reading</strong>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                        </ul>
-                    </div>
-                    <div class="">
-                        <ul>
-                            <strong>Further reading</strong>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                        </ul>
-                    </div>
-                    <div class="">
-                        <ul>
-                            <strong>Further reading</strong>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                            <li><a href="">link</a></li>
-                        </ul>
-                    </div>
-                    <img
-                        src="./assets/durham-university-2019.png"
-                        alt="Durham university"
-                        class="img-fluid"
-                        style="width: 200px;"
-                    />
-                </div>
+            <div class="jumbotron" style="background-color: #0096ff;">
+                <h1 class="display-4 row justify-content-md-center">
+                    Footer
+                </h1>
             </div>
         </footer>
 
