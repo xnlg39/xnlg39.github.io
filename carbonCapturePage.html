@@ -20,7 +20,7 @@
         <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
             <a class="navbar-brand home__nav__shadow" href="/">Climate</a>
             <button
-                class="navbar-toggler"
+                class="navbar-toggler home__nav__shadow"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -34,12 +34,12 @@
                     width="30"
                     height="30"
                     fill="currentColor"
-                    class="bi bi-chevron-down"
+                    class="bi bi-list home__nav__shadow"
                     viewBox="0 0 16 16"
                 >
                     <path
                         fill-rule="evenodd"
-                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
                     />
                 </svg>
             </button>
@@ -184,18 +184,17 @@
                             >
                         </li>
                     </ul>
-
                     <li class="nav-item d-flex">
-                        <a class="nav-link active" href="captureOffsetPage.html"
-                            >Carbon capture and Carbon offset</a
+                        <a class="nav-link active" href="carbonCapturePage.html"
+                            >Carbon capture</a
                         >
                         <div
                             class="nav-link px-1"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#collapseCarbon"
+                            data-target="#collapseCapture"
                             aria-expanded="false"
-                            aria-controls="collapseCarbon"
+                            aria-controls="collapseCapture"
                             onclick="handleArrowClick(arrowClimateActivism)"
                         >
                             <svg
@@ -215,36 +214,78 @@
                     </li>
                     <ul class="navbar-nav ml-3">
                         <li
-                            id="collapseCarbon"
+                            id="collapseCapture"
                             class="collapse"
                             aria-labelledby="headingTwo"
                         >
                             <a
                                 class="nav-link"
-                                href="/captureOffsetPage.html#CarbonCapture"
-                                >Carbon capture</a
+                                href="/carbonCapturePage.html#mainCarbonCaptureMethods"
+                                >Main carbon capture methods</a
                             >
                         </li>
                         <li
-                            id="collapseCarbon"
+                            id="collapseCapture"
                             class="collapse"
                             aria-labelledby="headingTwo"
                         >
                             <a
                                 class="nav-link"
-                                href="/captureOffsetPage.html#CarbonOffset"
-                                >Carbon offset</a
+                                href="/carbonCapturePage.html#usesOfCapturedCarbon"
+                                >Uses of captured carbon</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="carbonOffsetPage.html"
+                            >Carbon offset</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOffset"
+                            aria-expanded="false"
+                            aria-controls="collapseOffset"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whyShouldWeSupportCarbonOffset"
+                                >Why should we support carbon offset?</a
                             >
                         </li>
                         <li
-                            id="collapseCarbon"
+                            id="collapseOffset"
                             class="collapse"
                             aria-labelledby="headingTwo"
                         >
                             <a
                                 class="nav-link"
-                                href="/captureOffsetPage.html#Conclusion"
-                                >Conclusion</a
+                                href="/carbonOffsetPage.html#whereToBuyCarbonCredits"
+                                >Where to buy carbon credits</a
                             >
                         </li>
                     </ul>
