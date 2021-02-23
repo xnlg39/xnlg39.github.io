@@ -4,6 +4,7 @@ $(document).ready(function () {
         $('.home__nav').toggleClass('home__nav--top', $(this).scrollTop() < 5);
     });
 });
+
 function handleNavToggle() {
     $('.home__nav').toggleClass('home__nav--open');
 }
