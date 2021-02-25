@@ -108,6 +108,13 @@
     max-width: 350px;
     height: 300px;
 }
+/* -----------carbon capture----------- */
+.capture__card {
+    /* width: 20rem !important; */
+}
+.capture__arrow {
+    color: blue;
+}
 /* -----------footer styles----------- */
 footer ul {
     list-style-type: none;
