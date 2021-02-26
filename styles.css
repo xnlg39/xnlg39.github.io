@@ -1,3 +1,8 @@
+:root {
+    --nav-color: #173466;
+    --nav-color-highlight: #3c6cbb;
+}
+
 #example__jumbotron {
     background: url(./assets/example.jpg) no-repeat center center;
     background-position: center 51%;
@@ -75,12 +80,13 @@
 }
 
 .home__nav {
-    background-color: #173466;
+    background-color: var(--nav-color);
     box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.25);
     transition: all 0.5s ease;
 }
 .home__nav__shadow {
     text-shadow: 0 0 0.5rem rgba(35, 47, 74, 0.6);
+    color: white !important;
 }
 .home__nav--top {
     background-color: transparent;
@@ -88,7 +94,7 @@
     transition: all 0.5s ease;
 }
 .home__nav--open {
-    background-color: #173466 !important;
+    background-color: var(--nav-color) !important;
     box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.25);
     transition: all 0.5s ease;
 }
@@ -107,6 +113,22 @@
 .home__card {
     max-width: 350px;
     height: 300px;
+}
+/* -------------Info drops------------- */
+.info-drop__button {
+    background-color: var(--nav-color) !important;
+    color: white !important;
+    box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.25);
+    transition: background 0.5s ease;
+}
+.info-drop__button:hover {
+    background-color: var(--nav-color-highlight) !important;
+    transition: background 0.5s ease;
+}
+/* ----------climate activism---------- */
+.chart {
+    width: 400px;
+    height: 400px;
 }
 /* -----------carbon capture----------- */
 .capture__card {

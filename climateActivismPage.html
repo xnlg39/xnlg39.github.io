@@ -462,20 +462,26 @@
                 <span class="anchor" id="publicConsensus"></span>
                 <h4>Public Consensus</h4>
                 <br />
-                <p class="text-justify">
-                    Recent opinion polls demonstrate that the public is becoming
-                    increasingly concerned about climate change and its effects.
-                    As of September 2020, 82% of people in Britain described
-                    themselves as either very concerned (38%) or fairly
-                    concerned (44%) about climate change, this was a 4% rise
-                    from March of that year [2]. 71% of the world's population
-                    believe that the threat posed by climate change is as
-                    serious a crisis as the covid-19 pandemic [3]. Concern about
-                    climate change is highest amongst young people with 46% of
-                    British 18-24-year-olds describing themselves as very
-                    concerned, this is in contrast with only 24% of people over
-                    the age of 65 [4].
-                </p>
+                <div
+                    class="d-flex align-items-center justify-content-between row"
+                >
+                    <p class="text-justify">
+                        Recent opinion polls demonstrate that the public is
+                        becoming increasingly concerned about climate change and
+                        its effects. As of September 2020, 82% of people in
+                        Britain described themselves as either very concerned
+                        (38%) or fairly concerned (44%) about climate change,
+                        this was a 4% rise from March of that year [2]. 71% of
+                        the world's population believe that the threat posed by
+                        climate change is as serious a crisis as the covid-19
+                        pandemic [3]. Concern about climate change is highest
+                        amongst young people with 46% of British 18-24-year-olds
+                        describing themselves as very concerned, this is in
+                        contrast with only 24% of people over the age of 65 [4].
+                    </p>
+
+                    <div id="piechart" class="chart text-center mx-auto"></div>
+                </div>
                 <br />
                 <span class="anchor" id="whatCanAnIndividualDo"></span>
                 <h4>What can an individual do?</h4>
@@ -714,5 +720,41 @@
             crossorigin="anonymous"
         ></script>
         <script type="text/javascript" src="scripts.js"></script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load('current', { packages: ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Concern', 'percentage'],
+                    ['Concerned', 38],
+                    ['Fairly Concerned', 44],
+                    ['Not Concerned', 18],
+                ]);
+
+                var options = {
+                    // title: 'Public Consensus',
+                    legend: 'none',
+                    // width: '400px',
+                    // height: '400px',
+                    chartArea: {
+                        // left: 20,
+                        // top: -20,
+                        width: '90%',
+                        height: '90%',
+                    },
+                };
+
+                var chart = new google.visualization.PieChart(
+                    document.getElementById('piechart')
+                );
+
+                chart.draw(data, options);
+            }
+        </script>
     </body>
 </html>
