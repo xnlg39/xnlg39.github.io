@@ -134,8 +134,11 @@
 .capture__card {
     /* width: 20rem !important; */
 }
-.capture__arrow {
-    color: blue;
+#capture__selected {
+    color: #0d6efd;
+}
+#captureAccordion .collapsed #capture__selected {
+    color: inherit !important;
 }
 /* -----------footer styles----------- */
 footer ul {
