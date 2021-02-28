@@ -1,5 +1,5 @@
 :root {
-    --nav-color: #173466;
+    --nav-color: #6cd9b7;
     --nav-color-highlight: #3c6cbb;
 }
 
@@ -134,12 +134,23 @@
 .capture__card {
     /* width: 20rem !important; */
 }
-#capture__selected {
+.accordion__text {
     color: #0d6efd;
+    /* color: var(--nav-color); */
 }
-#captureAccordion .collapsed #capture__selected {
+#captureAccordion .collapsed .accordion__text {
     color: inherit !important;
 }
+#captureAccordion .collapsed .arrow {
+    transform: none;
+    -webkit-transform: none;
+}
+.arrow {
+    transition: all 0.3s ease;
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
 /* -----------footer styles----------- */
 footer ul {
     list-style-type: none;
