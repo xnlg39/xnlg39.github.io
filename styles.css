@@ -3,6 +3,10 @@
     --nav-color-highlight: #3c6cbb;
 }
 
+body a:hover {
+    color: var(--nav-color);
+}
+
 #example__jumbotron {
     background: url(./assets/example.jpg) no-repeat center center;
     background-position: center 51%;
@@ -127,8 +131,8 @@
 }
 /* ----------climate activism---------- */
 .chart {
-    width: 400px !important;
-    height: 400px;
+    width: 350px !important;
+    height: 350px;
 }
 /* -----------carbon capture----------- */
 .capture__card {

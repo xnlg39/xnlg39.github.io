@@ -474,6 +474,24 @@
                     consectetur. Aliquam et neque non nulla posuere faucibus.
                     Cras interdum enim a justo aliquam porta.
                 </p>
+                <div
+                    class="d-flex flex-wrap align-items-center justify-content-around"
+                >
+                    <div id="piechart" class="chart p-2"></div>
+                    <div id="piechart2" class="chart p-2"></div>
+                </div>
+
+                <p class="text-justify">
+                    <small>
+                        The first pie shows the average carbon emission of an
+                        individual in the UK in 2020 (<strong>12 tonnes</strong
+                        >) and The second shows the estimated reduction
+                        following actions layed out in this article (<strong
+                            >5.22 tonnes</strong
+                        >) on the right.
+                    </small>
+                </p>
+
                 <br />
                 <span class="anchor" id="energy"></span>
                 <h3>Energy</h3>
@@ -489,13 +507,17 @@
                     The first and most significant change you can make is to
                     switch to a green energy provider. In the Uk, we already
                     have multiple options, many of which are cheaper than their
-                    biggest competitors. Take pure planet (link) as an example.
-                    This energy provider charges a monthly membership fee of
-                    around £10/month and then sells you electricity at the price
-                    they can buy it at. This way they only make a profit on the
-                    membership and for individuals who consume a lot of energy
-                    it works out significantly cheaper as a result. Here is a
+                    biggest competitors. Take
+                    <a target="_blank" href="https://purepla.net/"
+                        >pure planet</a
+                    >
+                    as an example. They charge a monthly membership fee of
+                    around £10/month and then sell you electricity at the price
+                    they buy it from the grid. For individuals who consume a lot
+                    of energy, it works out significantly cheaper as a result.
+                    Here is a
                     <a
+                        target="_blank"
                         href="https://selectra.co.uk/energy/guides/renewable-energy/best-green-energy-supplier"
                         >link</a
                     >
@@ -562,6 +584,7 @@
                     A more in-depth breakdown of the options including all of
                     the heat pumps available can be found in
                     <a
+                        target="_blank"
                         href="https://friendsoftheearth.uk/climate/eco-heating-what-are-options"
                         >this</a
                     >
@@ -581,6 +604,7 @@
                     most efficient places to spend your money. A list of
                     accredited assessors can be found
                     <a
+                        target="_blank"
                         href="https://find-energy-certificate.digital.communities.gov.uk/"
                         >here</a
                     >. Once you know which part of your house is loosing the
@@ -598,6 +622,7 @@
                     based on information such as weather and if you are at home.
                     This
                     <a
+                        target="_blank"
                         href="https://www.bi.team/blogs/the-nest-learning-thermostat-making-energy-savings-easy/"
                         >study</a
                     >
@@ -870,5 +895,91 @@
             crossorigin="anonymous"
         ></script>
         <script type="text/javascript" src="scripts.js"></script>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load('current', { packages: ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Area', 'tonnes of CO2'],
+                    ['Energy', 2.52],
+                    ['Heating', 1.8],
+                    ['Transport', 3.24],
+                    ['Food', 1.2],
+                    ['Business', 2.04],
+                    ['Other', 1.5],
+                ]);
+
+                var options = {
+                    legend: 'none',
+                    chartArea: {
+                        width: '100%',
+                        height: '100%',
+                    },
+                    pieSliceText: 'label',
+                    slices: [
+                        { color: 'rgb(237, 182, 38)' },
+                        { color: 'rgb(241, 82, 82)' },
+                        { color: 'rgb(11, 135, 250)' },
+                        { color: 'rgb(166, 71, 0)' },
+                        { color: 'black' },
+                        { color: 'rgb(134, 134, 134)' },
+                    ],
+                };
+
+                var chart = new google.visualization.PieChart(
+                    document.getElementById('piechart')
+                );
+
+                chart.draw(data, options);
+            }
+        </script>
+        <script type="text/javascript">
+            google.charts.load('current', { packages: ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Area', 'tonnes of CO2'],
+                    ['Energy', 2.52],
+                    ['Heating', 1.8],
+                    ['Food2', 0.6],
+                    ['Transport2', 1.62],
+                    ['Transport', 1.62],
+                    ['Food', 0.6],
+                    ['Business', 2.04],
+                    ['Other', 1.5],
+                ]);
+
+                var options = {
+                    legend: 'none',
+                    chartArea: {
+                        width: '100%',
+                        height: '100%',
+                    },
+                    pieSliceText: 'label',
+                    slices: [
+                        { color: 'transparent' },
+                        { color: 'transparent' },
+                        { color: 'transparent' },
+                        { color: 'transparent' },
+                        { color: 'rgb(11, 135, 250)' },
+                        { color: 'rgb(166, 71, 0)' },
+                        { color: 'black' },
+                        { color: 'rgb(134, 134, 134)' },
+                    ],
+                };
+
+                var chart = new google.visualization.PieChart(
+                    document.getElementById('piechart2')
+                );
+
+                chart.draw(data, options);
+            }
+        </script>
     </body>
 </html>
