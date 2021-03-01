@@ -116,13 +116,13 @@
 }
 /* -------------Info drops------------- */
 .info-drop__button {
-    background-color: var(--nav-color) !important;
+    /* background-color: var(--nav-color) !important; */
     color: white !important;
-    box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.25); */
     transition: background 0.5s ease;
 }
 .info-drop__button:hover {
-    background-color: var(--nav-color-highlight) !important;
+    background-color: var(--nav-color) !important;
     transition: background 0.5s ease;
 }
 /* ----------climate activism---------- */
