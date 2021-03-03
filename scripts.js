@@ -9,18 +9,24 @@ function handleNavToggle() {
     $('.home__nav').toggleClass('home__nav--open');
 }
 function handleArrowClick(doc) {
-    //could add a check here to make sure it is collapsed
+    console.log(doc);
     doc.classList.toggle('arrow--active');
 }
+
 lastHeader = 'headingOne';
+
 function handleHeaderClick(doc) {
-    if (lastHeader === doc.id) {
-        doc.classList.toggle('info-drop__button--active');
-    } else {
+    doc.classList.toggle('info-drop__button--active');
+    if (lastHeader === doc.id) return;
+    if (
+        document
+            .getElementById(lastHeader)
+            .classList.contains('info-drop__button--active')
+    ) {
         document
             .getElementById(lastHeader)
             .classList.toggle('info-drop__button--active');
-        doc.classList.toggle('info-drop__button--active');
-        lastHeader = doc.id;
     }
+
+    lastHeader = doc.id;
 }
