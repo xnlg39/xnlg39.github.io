@@ -837,17 +837,21 @@
                     Although this is outside of the scope of this site, it is
                     not hard to make an argument for why this is a good thing!
                 </p>
-                <div class="accordion border rounded" id="accordionMethane">
-                    <div class="card">
-                        <div class="card-header info-drop__button">
+                <div class="accordion" id="accordionMethane">
+                    <div class="card border rounded">
+                        <div
+                            class="card-header info-drop__button info-drop__button--active"
+                            id="headingOne"
+                        >
                             <div class="mb-0">
                                 <button
-                                    class="btn btn-block collapsed d-flex align-items-center justify-content-between"
+                                    class="btn btn-block d-flex align-items-center justify-content-between"
                                     type="button"
                                     data-toggle="collapse"
                                     data-target="#methaneCollapse"
                                     aria-expanded="false"
                                     aria-controls="methaneCollapse"
+                                    onclick="handleHeaderClick(headingOne)"
                                 >
                                     <h5 class="">
                                         Methane
@@ -858,11 +862,11 @@
                                             width="20"
                                             height="20"
                                             fill="currentColor"
-                                            class="bi bi-caret-down-fill"
+                                            class="bi bi-caret-up-fill"
                                             viewBox="0 0 16 16"
                                         >
                                             <path
-                                                d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                                                d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
                                             />
                                         </svg>
                                     </div>
@@ -872,7 +876,7 @@
                         <div
                             id="methaneCollapse"
                             class="collapse show"
-                            aria-labelledby="headingFour"
+                            aria-labelledby="headingOne"
                             data-parent="#accordionMethane"
                         >
                             <div class="card-body">
@@ -888,7 +892,7 @@
                                     Methane in the upper-atmosphere undergoes
                                     free-radical reactions which break it down
                                     into CO2 and water over the space of a
-                                    decade[]. Hence, although initially very
+                                    decade. Hence, although initially very
                                     potent after a decade its damage is
                                     drastically mitigated.
                                 </p>
@@ -1003,7 +1007,10 @@
                     To recap on how to reduce your carbon footprint by roughly
                     60%:
                 </p>
-                <ul style="list-style-type: none;">
+                <ul
+                    style="list-style-type: none;"
+                    class="border rounded p-2 pr-4"
+                >
                     <li>
                         <h6>Energy: 2.5 <span>&rarr;</span> 0 tonnes</h6>
                         <p class="text-justify">
@@ -1053,8 +1060,10 @@
                 </p>
 
                 <div class="card mx-auto" style="max-width: 600px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
+                    <div
+                        class="d-flex flex-row flex-wrap justify-content-center"
+                    >
+                        <div class="">
                             <img
                                 src="https://www.wwf.org.uk/themes/custom/wwf/img/wwf-logo.svg"
                                 class="img-fluid m-1"
@@ -1062,19 +1071,19 @@
                                 alt="WWF logo"
                             />
                         </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    Carbon footprint calculator
-                                </h5>
-                                <p class="card-text">
-                                    The link below will take you to a WWF
-                                    questionare which will display your current
-                                    carbon footprint and which areas of your
-                                    life contribute the most.
-                                </p>
-                            </div>
+
+                        <div class="card-body" style="width: 200px;">
+                            <h5 class="card-title">
+                                Carbon footprint calculator
+                            </h5>
+                            <p class="card-text">
+                                The link below will take you to a WWF
+                                questionare which will display your current
+                                carbon footprint and which areas of your life
+                                contribute the most.
+                            </p>
                         </div>
+
                         <a
                             target="_blank"
                             href="https://footprint.wwf.org.uk/#/questionnaire"
@@ -1087,10 +1096,39 @@
         </div>
 
         <footer>
-            <div class="jumbotron" style="background-color: #0096ff;">
-                <h1 class="display-4 row justify-content-md-center">
-                    Footer
-                </h1>
+            <div class="jumbotron" style="background-color: #f8f8f8;">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./assets/durham-university-2019.png"
+                        alt="Durham university"
+                        class="img-fluid align-self-center mx-auto my-4"
+                        id="durham-badge"
+                    />
+                </div>
             </div>
         </footer>
         <script

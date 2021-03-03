@@ -125,6 +125,10 @@ body a:hover {
     /* box-shadow: 0 0 0.5em 0.2em rgba(0, 0, 0, 0.25); */
     transition: background 0.5s ease;
 }
+.info-drop__button--active {
+    background-color: var(--nav-color) !important;
+    transition: background 0.5s ease;
+}
 .info-drop__button:hover {
     background-color: var(--nav-color) !important;
     transition: background 0.5s ease;
@@ -138,13 +142,14 @@ body a:hover {
 .capture__card {
     /* width: 20rem !important; */
 }
-.accordion__text {
-    color: #0d6efd;
-    /* color: var(--nav-color); */
-}
-#captureAccordion .collapsed .accordion__text {
-    color: inherit !important;
-}
+
+/* #captureAccordion #headingOne {
+    background-color: var(--nav-color);
+} */
+/* #captureAccordion .collapsed .card-header {
+    background-color: red !important;
+} */
+
 #captureAccordion .collapsed .arrow {
     transform: none;
     -webkit-transform: none;
@@ -154,7 +159,14 @@ body a:hover {
     transform: rotate(-180deg);
     -webkit-transform: rotate(-180deg);
 }
-
+/* ----------personal impacts---------- */
+#accordionMethane .collapsed .accordion__text {
+    color: inherit !important;
+}
+#accordionMethane .collapsed .arrow {
+    transform: none;
+    -webkit-transform: none;
+}
 /* -----------footer styles----------- */
 footer ul {
     list-style-type: none;
