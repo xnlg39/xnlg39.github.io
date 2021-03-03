@@ -138,16 +138,6 @@ body a:hover {
     height: 350px;
 }
 /* -----------carbon capture----------- */
-.capture__card {
-    /* width: 20rem !important; */
-}
-
-/* #captureAccordion #headingOne {
-    background-color: var(--nav-color);
-} */
-/* #captureAccordion .collapsed .card-header {
-    background-color: red !important;
-} */
 
 #captureAccordion .collapsed .arrow {
     transform: none;
