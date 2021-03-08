@@ -22,6 +22,15 @@ body a:hover {
     height: 400px;
     border-radius: 0px 0px 5px 5px;
 }
+#mechanism__jumbotron {
+    background: url(./assets/mechanism/mechanismBannerImg.jpg) no-repeat center
+        center;
+    background-position: center 59%;
+    background-size: cover;
+    color: white;
+    height: 400px;
+    border-radius: 0px 0px 5px 5px;
+}
 #carbonOffset__jumbotron {
     background: url(./assets/carbonOffsetBannerImg.jpg) no-repeat center center;
     background-position: center 60%;
@@ -153,6 +162,15 @@ body a:hover {
     color: inherit !important;
 }
 #accordionMethane .collapsed .arrow {
+    transform: none;
+    -webkit-transform: none;
+}
+/* ------climate change mechanism------ */
+#accordionSTWA .collapsed .arrow {
+    transform: none;
+    -webkit-transform: none;
+}
+#accordionIA .collapsed .arrow {
     transform: none;
     -webkit-transform: none;
 }

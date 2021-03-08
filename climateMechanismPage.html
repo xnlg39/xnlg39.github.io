@@ -13,224 +13,1291 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./styles.css" />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/assets/favicon.ico"
+        />
 
-        <title></title>
+        <title>Climate | Capture</title>
     </head>
     <body>
-        <nav
-            class="navbar sticky-top navbar-dark"
-            style="background-color: #0096ff;"
-        >
-            <a class="navbar-brand" href="/">Climate</a>
+        <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
+            <a class="navbar-brand home__nav__shadow" href="/">Climate</a>
             <button
-                class="navbar-toggler"
+                class="navbar-toggler home__nav__shadow"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                onClick="handleNavToggle()"
             >
-                <span class="navbar-toggler-icon"></span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list home__nav__shadow"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
+                    <li class="nav-item d-flex">
+                        <a
+                            class="nav-link active"
+                            href="climateMechanismPage.html"
+                            >Mechanism of climate change</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseMechanism"
+                            aria-expanded="false"
+                            aria-controls="collapseMechanism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#"
+                                >Insert section here</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="climateModelingPage.html"
                             >Modeling the climate</a
                         >
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="climateMechanismPage.html"
-                            >Mechanism of climate change</a
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseModeling"
+                            aria-expanded="false"
+                            aria-controls="collapseModeling"
+                            onclick="handleArrowClick(arrowClimateActivism)"
                         >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="captureOffsetPage.html"
-                            >Carbon capture and Carbon offset</a
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
                         >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="politicalImpactPage.html"
-                            >Political impact on climate change</a
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#CurrentMethods"
+                                >Current methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
                         >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#FutureMethods"
+                                >Future methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#DigitalTwins"
+                                >Digital twins</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#IsClimateChangeReal"
+                                >Is climate change real?</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="carbonCapturePage.html"
+                            >Carbon capture</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseCapture"
+                            aria-expanded="false"
+                            aria-controls="collapseCapture"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseCapture"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonCapturePage.html#mainCarbonCaptureMethods"
+                                >Main carbon capture methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCapture"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonCapturePage.html#usesOfCapturedCarbon"
+                                >Uses of captured carbon</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="carbonOffsetPage.html"
+                            >Carbon offset</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOffset"
+                            aria-expanded="false"
+                            aria-controls="collapseOffset"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whyShouldWeSupportCarbonOffset"
+                                >Why should we support carbon offset?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whereToBuyCarbonCredits"
+                                >Where to buy carbon credits</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateActivismPage.html"
+                            >Climate activism</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseActivism"
+                            aria-expanded="false"
+                            aria-controls="collapseActivism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#publicConsensus"
+                                >Public Consensus</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#whatCanAnIndividualDo"
+                                >What can an individual do?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#caseStudies"
+                                >Case studies</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="personalImpactPage.html"
                             >Personal Impact on climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
+                            >
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </nav>
 
         <div
-            class="jumbotron"
-            id="example__jumbotron"
-            style="background-color: #64a7e9;"
+            class="jumbotron d-flex justify-content-center align-items-center"
+            id="mechanism__jumbotron"
         >
-            <h1 class="display-4 row justify-content-md-center">
-                <strong>Title of this page</strong>
+            <h1 class="display-4 jumbotron__title text-center">
+                <strong>Mechanism of climate change</strong>
             </h1>
         </div>
 
-        <div class="container">
+        <div class="container" id="content">
             <div class="p-2">
                 <p class="text-justify" style="font-size: large;">
-                    A breif summary of what this page is about and what is going
-                    to be addressed. Basically an abstract. abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract.
+                    Have you ever wondered what is known about the exact
+                    mechanism that drives climate change? Sure, you know that
+                    carbon dioxide is an important driver. But what is behind
+                    all of the terms we hear in the media so often? In this
+                    page, Laura will explain the science behind climate change
+                    and why evidence shows we can attribute it to human
+                    activity.
                 </p>
                 <hr />
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <p class="text-center m-0">
-                                By <strong>Author</strong>
-                            </p>
-                        </div>
-                        <div class="col">
-                            <p class="text-center m-0">20 Jan 2021</p>
-                        </div>
-                        <div class="col">
-                            <p class="text-center m-0">10 min</p>
-                        </div>
+                <div class="d-flex align-items-center justify-content-around">
+                    <p class="text-center m-0">
+                        By <strong>Laura Polzer</strong>
+                    </p>
+
+                    <p class="text-center m-0 mx-2">
+                        |
+                    </p>
+                    <div
+                        class="d-flex align-items-center justify-content-center"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"
+                            />
+                        </svg>
+                        <p class="text-center m-0 px-2">6th Mar 2021</p>
+                    </div>
+
+                    <p class="fs-1 text-center m-0 mx-2">
+                        |
+                    </p>
+                    <div
+                        class="d-flex align-items-center justify-content-center"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-clock-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                            />
+                        </svg>
+                        <p class="text-center m-0 px-2">10 min</p>
                     </div>
                 </div>
                 <hr />
+                <p class="text-justify">
+                    We are living in times where climate patterns change on
+                    global and regional scales. These changes include a broad
+                    range of observed effects, one of them being global warming.
+                    The period of recent anthropogenic climate change has been
+                    apparent since the mid to late 20th century. Both the
+                    climate system and its changes have been studied in detail
+                    by scientists around the world to understand the underlying
+                    causes of the observed effects. Research includes
+                    interdisciplinary work, ranging from environmental physics
+                    and meteorology to atomic physics and biochemistry.
+                </p>
+                <p class="text-justify">
+                    In this page, we will discover the physical science behind
+                    climate change. Firstly, we will explore how solar radiation
+                    and its interaction with the atmosphere affect climate
+                    conditions. Knowing the ways in which climate conditions are
+                    linked to heat absorption by atmospheric particles, we can
+                    identify the main drivers of climate change. In the next
+                    section, we will focus on the changes that have been
+                    observed in the atmosphere (air), hydrosphere (liquid water)
+                    and cryosphere (ice). After that, we will carefully check if
+                    these observations could be attributed to natural causes. We
+                    will scrutinise why scientists seem to be so sure that
+                    humans are responsible for Climate change. Knowing all of
+                    this, we will take a brief look at the further effects that
+                    can be expected assuming realistic conditions.
+                </p>
+                <br />
+                <span class="anchor" id="radiationBalanceOfTheEarth"></span>
+                <h3>Radiation balance of the Earth</h3>
+                <br />
+                <p class="text-justify">
+                    Life on Earth depends on external energy coming from the
+                    Sun. Since the Sun and Earth are separated by vacuum, the
+                    only mechanism of energy exchange is by radiation. The solar
+                    irradiation at Earth’s orbit is S0= 1362 W/m2. The Earth
+                    emits radiation as well, only at much longer wavelengths
+                    (infrared). The more radiation the Earth absorbs and the
+                    less is radiation re-emitted into space, the higher the
+                    temperature on Earth. Therefore, it is vital to understand
+                    the mechanism by which the Earth absorbs radiation from the
+                    Sun and emits infrared radiation.
+                </p>
+                <br />
+                <h5>
+                    Radiation Laws
+                </h5>
+                <br />
+                <p class="text-justify">
+                    These processes are described in their most basic form by
+                    Planck’s radiation law for black bodies. A black body is an
+                    idealised object which absorbs radiation of all wavelengths
+                    to 100%. A black body in thermal equilibrium, i.e. at a
+                    constant temperature, emits electromagnetic black-body
+                    radiation, which is described by Planck’s radiation
+                    equation. It describes the spectral radiance B, i.e. how
+                    much radiation is emitted per unit area and unit solid
+                    angle, as a function of wavelength. The equation takes the
+                    form:
+                </p>
+
+                <p>
+                    \[E(\lambda, T)= \frac{2hc^2}{\lambda ^5}* \frac{1}{
+                    \exp(\frac{hc}{\lambda kT})-1}\]
+                </p>
+                <p class="text-justify">
+                    Where \(\lambda\) is the wavelength of light, \(T\) is the
+                    temperature of the body, \(h\) is Planck's constant, \(c\)
+                    is the speed of light in a vacuum and \(k\) is the
+                    Boltzmann's constant.
+                </p>
+                <p class="text-justify">
+                    Using the above equation, we can plot the Planck emission
+                    spectrum of both Sun and Earth as a function of wavelength.
+                    Because the temperature of the Sun (TSun= 5504°C= 5777K) is
+                    much larger than those of the Earth (TEarth=30°C=303K),
+                    Earth emits radiation at lower energies and, hence, larger
+                    wavelengths. Earth’s emission lies within the infrared
+                    region. The difference in temperature also causes the total
+                    radiation emission of the Earth to be lower compared to the
+                    Sun’s.
+                </p>
+                <img
+                    src="https://learningweather.psu.edu/sites/default/files/Lesson3/plank0303.jpg"
+                    alt="BLACK BODY EMISSION SPECTRA OF SUN AND EARTH"
+                    class="img-fluid mx-auto d-block"
+                />
+                <br />
+                <p class="text-justify">
+                    We can use the black body approximation to calculate the
+                    emission spectrum of the Sun. However, it is evident that
+                    the Earth can hardly be called a black body. If the Earth
+                    were a black body, all visible light would be absorbed and
+                    from the outside the planet would appear to be entirely
+                    black. However, this is not the case if you recall that
+                    Earth looks fairly blue with a lot of white clouds from
+                    space. In scientific terms, we say that the surface
+                    reflectivity, also called albedo, in the visible regime is
+                    greater than zero. About 30% of radiation from the Sun is
+                    reflected, mainly by clouds, snow and ice.
+                </p>
+                <p class="text-justify">
+                    Just like Earth doesn’t absorb all radiation perfectly, its
+                    emission in the infrared regime is also lowered. The mean
+                    emissivity, i.e. the effectiveness in emitting energy as
+                    radiation in the infrared regime, is only about 95% of those
+                    of an idealised black body.
+                </p>
+                <p class="text-justify">
+                    Because of these imperfect absorption and emission
+                    properties, scientists call Earth a grey body. This term is
+                    misleading in the way that it has nothing to do with the
+                    actual colour of the planet. Instead, it refers to the fact
+                    that some visible light is reflected and less infrared
+                    radiation is emitted.
+                </p>
+
+                <h5>
+                    Global Radiation Balance: The greenhouse effect
+                </h5>
 
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
-                    nisi. Quisque sollicitudin posuere erat. Vivamus hendrerit
-                    tempus est sit amet sollicitudin. Vivamus convallis vitae
-                    elit et vestibulum. Nullam ac erat lorem. Fusce vel tempor
-                    odio, non ullamcorper augue. Etiam risus erat, cursus a dui
-                    eget, laoreet venenatis elit. Sed mattis massa orci, ac
-                    convallis lectus imperdiet ac. In bibendum pretium
-                    consectetur. Aliquam et neque non nulla posuere faucibus.
-                    Cras interdum enim a justo aliquam porta.
+                    In the simplest model the Earth is assumed to be a grey body
+                    without an atmosphere at a uniform surface temperature T.
+                    Assuming equilibrium of incoming and outgoing radiation
+                    allows us to calculate the surface temperature of the Earth.
+                </p>
+                <div class="accordion" id="accordionSTWA">
+                    <div class="card border rounded">
+                        <div
+                            class="card-header info-drop__button info-drop__button--active"
+                            id="headingOne"
+                        >
+                            <div class="mb-0">
+                                <button
+                                    class="btn btn-block d-flex align-items-center justify-content-between"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#surfTempWithoutAtmosphereCollapse"
+                                    aria-expanded="false"
+                                    aria-controls="surfTempWithoutAtmosphereCollapse"
+                                    onclick="handleHeaderClick(headingOne)"
+                                >
+                                    <h5 class="">
+                                        Calculating the surface temperature
+                                        without an atmosphere
+                                    </h5>
+                                    <div class="mb-2 arrow">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="20"
+                                            fill="currentColor"
+                                            class="bi bi-caret-up-fill"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+                                            />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            id="surfTempWithoutAtmosphereCollapse"
+                            class="collapse show"
+                            aria-labelledby="headingOne"
+                            data-parent="#accordionSTWA"
+                        >
+                            <div class="card-body">
+                                <p class="card-text">
+                                    We can determine the power transfer by
+                                    radiation to or from a surface by
+                                    multiplying the total radiation per square
+                                    meter by the absorbing or emitting area.
+                                </p>
+                                <p class="card-text">
+                                    If you think of the Earth, the absorbing and
+                                    emitting areas are not equal. While
+                                    absorbing radiation from the Sun, only part
+                                    of the surface is hit by the Sunrays. In
+                                    fact, the surface absorbing solar radiation
+                                    equals the area of a circle of the radius of
+                                    the Earth. When the Earth emits radiation,
+                                    it does so through its entire spherical
+                                    surface. This surface is four times larger
+                                    than the area of a circle.
+                                </p>
+
+                                <p class="card-text">
+                                    Recalling from the previous section, a grey
+                                    body is characterised by reflection
+                                    \(A&gt;0\) for short wavelengths and
+                                    emission \(\epsilon&lt;1\) for long
+                                    wavelengths. These values are therefore
+                                    included in our equations.
+                                </p>
+                                <p class="card-text">
+                                    We can obtain the surface temperature \(T\)
+                                    of the Earth by assuming equilibrium of
+                                    incoming and outgoing radiation:
+                                </p>
+
+                                <strong>equation</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <p class="text-justify">
+                    Setting in the known values \(A=0.3\) and \(\epsilon=0.95\)
+                    in, we obtain: \(T =-15°C\).
                 </p>
                 <p class="text-justify">
-                    Phasellus sed ex et mi consectetur auctor sit amet non
-                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
-                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
-                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
-                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
-                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
-                    Proin tristique, dolor ac eleifend viverra, nunc augue
-                    cursus metus, quis commodo purus mauris at ligula.
-                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
-                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
-                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
-                    vulputate erat tempus vitae. Proin ultricies sodales felis
-                    non sodales. Praesent euismod sapien sit amet mi vulputate,
-                    sed volutpat turpis facilisis. Phasellus egestas dui
-                    scelerisque massa condimentum, non viverra felis consequat.
-                    Curabitur imperdiet vehicula metus, non venenatis ex
-                    placerat nec. Sed sed ornare massa.
+                    If you have ever been outside at \(-15°C\), you know that
+                    these freezing conditions are definitely not the ideal for
+                    life on Earth. Our result is surely not the real mean
+                    temperature at the surface of the Earth, even if we
+                    disregarded seasons in our consideration. And this wrong
+                    result doesn’t come about because of some error in our
+                    calculation. If you are sceptical, try computing the value
+                    yourself.
                 </p>
                 <p class="text-justify">
-                    Duis facilisis sed leo nec molestie. Fusce sed viverra
-                    lectus. Praesent ex eros, tempor commodo interdum eget,
-                    pellentesque quis velit. Nullam sed lobortis elit. Sed
-                    molestie turpis auctor felis mollis faucibus. Curabitur
-                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
-                    sagittis nisi egestas a.
+                    The origin of difference lies within what is called the
+                    <strong>natural greenhouse effect</strong>. It is caused by
+                    heat absorption of the atmosphere. In the previous model, we
+                    disregarded the existence of the atmosphere. As it turns out
+                    the atmosphere has a large effect on climate conditions.
+                    Particularly, the well-known greenhouse gases contribute
+                    largely to the warming of Earth, even though they only make
+                    up about 0.1% of the atmosphere. To understand why this is,
+                    we have to take a look at the absorption and transmission
+                    properties of the atmosphere.
+                </p>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Atmospheric_Transmission.png"
+                    alt="Radiation Transmitted by the Atmosphere"
+                    class="img-fluid border-info rounded"
+                />
+                <p class="text-justify">
+                    The figure shows that in the visible range most light is
+                    transmitted, whereas most of the ultra-violet and infrared
+                    radiation is absorbed. However, there is a so-called
+                    atmospheric window, a gap in the total infrared absorption
+                    where nearly unhindered infrared emission from the Earth’s
+                    surface is possible. Since this atmospheric window matches
+                    with the black body emission spectrum of the Earth (see the
+                    first figure), radiation emitted by the surface should be
+                    able to escape into space. If this were the case, the
+                    atmosphere would have a negligible effect on surface
+                    temperature.
                 </p>
                 <p class="text-justify">
-                    Pellentesque risus justo, ullamcorper id velit eget,
-                    scelerisque molestie massa. In efficitur, nunc aliquet
-                    efficitur condimentum, nisi erat tristique magna, ac viverra
-                    nibh lorem id tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Maecenas in sem massa. Praesent
-                    porttitor sapien eget ante euismod, quis convallis quam
-                    condimentum. Class aptent taciti sociosqu ad litora torquent
-                    per conubia nostra, per inceptos himenaeos. Sed et nunc
-                    scelerisque, auctor tortor vel, elementum nisl. Cras
-                    placerat fringilla erat, in fringilla lorem fringilla at.
+                    We already know from our calculation that this is false. The
+                    solution to this problem are atmospheric greenhouse gases
+                    (mostly H2O, CO2, ozone and methane). These molecules can
+                    absorb infrared radiation to trigger rotational or
+                    vibrational transitions. As you can see in the bottom of the
+                    figure, greenhouse gases absorb parts of the infrared
+                    radiation in the atmospheric window. This additionally
+                    absorbed heat is responsible for the warming of Earth’s
+                    surface of about 30°C, from -15°C to +15°C. The largest
+                    contribution to the natural greenhouse effect comes from
+                    water (about 62%), with carbon dioxide being second with
+                    22%.
                 </p>
                 <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
-                    nisi. Quisque sollicitudin posuere erat. Vivamus hendrerit
-                    tempus est sit amet sollicitudin. Vivamus convallis vitae
-                    elit et vestibulum. Nullam ac erat lorem. Fusce vel tempor
-                    odio, non ullamcorper augue. Etiam risus erat, cursus a dui
-                    eget, laoreet venenatis elit. Sed mattis massa orci, ac
-                    convallis lectus imperdiet ac. In bibendum pretium
-                    consectetur. Aliquam et neque non nulla posuere faucibus.
-                    Cras interdum enim a justo aliquam porta.
+                    Starting from the natural greenhouse effect it is easy to
+                    understand the anthropogenic greenhouse effect. In brief,
+                    because human activity is increasing concentration of
+                    greenhouse gases more heat is absorbed and, among other
+                    things, surface temperature rises. This topic will be
+                    investigated in greater depth, in the part Drivers of
+                    Climate Change (link?).
                 </p>
                 <p class="text-justify">
-                    Phasellus sed ex et mi consectetur auctor sit amet non
-                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
-                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
-                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
-                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
-                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
-                    Proin tristique, dolor ac eleifend viverra, nunc augue
-                    cursus metus, quis commodo purus mauris at ligula.
-                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
-                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
-                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
-                    vulputate erat tempus vitae. Proin ultricies sodales felis
-                    non sodales. Praesent euismod sapien sit amet mi vulputate,
-                    sed volutpat turpis facilisis. Phasellus egestas dui
-                    scelerisque massa condimentum, non viverra felis consequat.
-                    Curabitur imperdiet vehicula metus, non venenatis ex
-                    placerat nec. Sed sed ornare massa.
+                    When taking into account the effects of both land and water
+                    surface, the atmosphere and clouds the matter becomes more
+                    complicated. However, the effects of certain key parameters
+                    can be calculated. In figure 3, the global energy balance is
+                    depicted schematically. Numbers indicate best estimates for
+                    the magnitudes of the globally averaged energy balance
+                    components together with their uncertainty ranges. Numbers
+                    are based on the latest climate report of the IPCC
+                    (AR5,2013).
+                </p>
+                <img
+                    src="https://iac.ethz.ch/group/climate-and-water-cycle/research/radiation-and-the-hydrological-cycle/revaluation-of-the-global-energy-balance/_jcr_content/par/textimage/image.imageformat.lightbox.150311746.jpg"
+                    alt="Figure showing heat retention and loss in atmosphere"
+                    class="img-fluid"
+                />
+                <br />
+                <p class="text-justify">
+                    In the figure, we can see that there is incoming radiation
+                    from the Sun and outgoing radiation from the Earth. Only
+                    about 50% of incoming solar radiation is absorbed by the
+                    surface. You can see on the very right that most of the
+                    outgoing infrared radiation is reabsorbed by greenhouse
+                    gases in the atmosphere. In total, there is an energy
+                    imbalance that leads to heat absorption by the surface (left
+                    hand bottom).
                 </p>
                 <p class="text-justify">
-                    Duis facilisis sed leo nec molestie. Fusce sed viverra
-                    lectus. Praesent ex eros, tempor commodo interdum eget,
-                    pellentesque quis velit. Nullam sed lobortis elit. Sed
-                    molestie turpis auctor felis mollis faucibus. Curabitur
-                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
-                    sagittis nisi egestas a.
+                    Reality is still much more complex. Scientists have to take
+                    into account absorption spectra, concentration profiles of
+                    trace gases, clouds, latitudinal and seasonal variation. For
+                    our consideration, these calculations are far too complex.
+                    Nevertheless, it is interesting to take a look at the
+                    parameters that have been identified by scientists as key
+                    for climate conditions and to investigate how these
+                    parameters drive climate change.
+                </p>
+                <div class="card mx-auto" style="max-width: 600px;">
+                    <div
+                        class="d-flex flex-column flex-wrap justify-content-center"
+                    >
+                        <div class="">
+                            <img
+                                src="https://ecometrica.com/wp-content/uploads/2018/10/ipcc-logo-1.jpg"
+                                class="img-fluid"
+                                alt="WWF logo"
+                            />
+                        </div>
+
+                        <div class="card-body">
+                            <p class="card-text">
+                                The IPCC is an intergovernmental institution,
+                                which summarizes the latest research of
+                                thousands of scientist around the world for
+                                political decision-makers. The goal of the
+                                reports is to offer the basis for science-based
+                                decisions without giving recommendations for
+                                action. It was awarded the Nobel peace prize in
+                                2007. We used the data of their fifth and most
+                                recent Assessment Report. To learn more about
+                                the IPCC and their findings, we encourage you to
+                                take a look at their website and the AR5.
+                            </p>
+                        </div>
+
+                        <a
+                            target="_blank"
+                            href="https://www.ipcc.ch/"
+                            class="stretched-link"
+                        ></a>
+                    </div>
+                </div>
+                <br />
+
+                <br />
+                <span class="anchor" id="driversOfClimateChange"></span>
+                <h3>Drivers of Climate Change</h3>
+                <br />
+                <p class="text-justify">
+                    As we have seen in our physical analysis in the previous
+                    section, the concentration of greenhouse gases in the
+                    atmosphere strongly influences temperature on Earth, even
+                    though they only compose 0.1% of gas in the atmosphere.
                 </p>
                 <p class="text-justify">
-                    Pellentesque risus justo, ullamcorper id velit eget,
-                    scelerisque molestie massa. In efficitur, nunc aliquet
-                    efficitur condimentum, nisi erat tristique magna, ac viverra
-                    nibh lorem id tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Maecenas in sem massa. Praesent
-                    porttitor sapien eget ante euismod, quis convallis quam
-                    condimentum. Class aptent taciti sociosqu ad litora torquent
-                    per conubia nostra, per inceptos himenaeos. Sed et nunc
-                    scelerisque, auctor tortor vel, elementum nisl. Cras
-                    placerat fringilla erat, in fringilla lorem fringilla at.
+                    In fact the main driver of climate change is the increase in
+                    atmospheric concentrations of greenhouse gases, particularly
+                    in carbon dioxide, methane, nitrous oxide and halocarbons,
+                    due to human activity.
+                </p>
+                <p class="text-justify">
+                    While all of these gases trap thermal energy within the
+                    atmosphere, the origin of these gases varies. Carbon dioxide
+                    mainly originates from the combustion of fossil fuels,
+                    methane comes from agricultural practices and nitrous oxide
+                    accrues during the burning of fossil fuel. Halocarbons on
+                    the other hand are mostly man-made chemicals, which have
+                    been applied as solvents or refrigerants.
+                </p>
+                <p class="text-justify">
+                    Carbon dioxide surely is the most well-kown greenhouse gas.
+                    Its atmospheric concentration has been measured since the
+                    1950s. Atmospheric concentrations are usually given in parts
+                    per million (ppm). Carbon dioxide concentration shows
+                    seasonal variation, but the upwards trend is clearly visible
+                    (see figure 4).
+                </p>
+                <img
+                    src="https://geolsoc.files.wordpress.com/2013/05/mauna_loa_carbon_dioxide_apr2013-svg.png"
+                    alt="Atmospheric Carbon Dioxide over time"
+                    class="img-fluid"
+                />
+                <br />
+                <br />
+                <h5>Radiative forcing</h5>
+
+                <p class="text-justify">
+                    To facilitate comparing effects of drivers of climate change
+                    quantitatively, the concept of radiative forcing is
+                    introduced. Radiative forcing (RF) is defined as the change
+                    in the global energy balance of the Earth, relative to
+                    preindustrial times.
+                </p>
+                <p class="text-justify">
+                    RF&gt;0: warming of the Climate System, e.g. CO<sub>2</sub>,
+                    methane and stratospheric H<sub>2</sub>O
+                </p>
+                <p class="text-justify">
+                    RF&lt;0: cooling of the Climate System, e.g. aerosols and
+                    large volcanic eruptions.
+                </p>
+                <img
+                    src="./assets/mechanism/figure5.PNG"
+                    alt="Radiative forcing"
+                    class="img-fluid d-block mx-auto"
+                />
+                <p class="text-justify">
+                    As you can see on the bottom of the figure, total radiative
+                    forcing is positive, which has led to an energy uptake by
+                    the climate system. The error bars represent the uncertainty
+                    of the mean values.
+                </p>
+                <p class="text-justify">
+                    Also, it can be seen that some anthropogenic effects,
+                    aerosols and precursors especially, have a net negative RF.
+                    However, uncertainties of these parameters are large, since
+                    the way aerosols interact with radiation and their effect on
+                    cloud formation has not yet been understood completely. On
+                    the other hand, it is clear that all well-mixed greenhouse
+                    gases in the atmosphere have a large positive value for RF,
+                    causing the total value to be positive.
+                </p>
+                <p class="text-justify">
+                    To fully understand figure 5 , we have to understand how the
+                    values for radiative forcing are determined. They are
+                    calculated taking into account the atmospheric concentration
+                    and spatial distribution of the driver of interest. Since
+                    their physical interaction with radiation can be calculated
+                    (see the previous section), the net effect on the total
+                    energy within the climate system is determined.
+                    Additionally, natural drivers, such as variance in solar
+                    activity and volcanic eruptions are included.
+                </p>
+                <p class="text-justify">
+                    As mentioned above, key uncertainties arise from the effect
+                    of aerosols, cloud formation triggered by aerosols, the
+                    effect of clouds, ozone and surface reflectivity. However,
+                    even the models assuming the smallest reasonable values for
+                    RF still find a RF to be positive.
+                </p>
+                <p class="text-justify">
+                    In this section, we learned that total radiative forcing is
+                    positive, which has led to an uptake of energy by the
+                    climate system. The largest contribution comes from the
+                    increase of atmospheric CO2 concentration since the
+                    beginning of industrialisation.
+                </p>
+                <br />
+
+                <span class="anchor" id="observedClimateChanges"></span>
+                <h3>Observed Climate Changes</h3>
+                <br />
+                <p class="text-justify">
+                    Observations of the climate system can be made based on
+                    direct measurement or remote sensing from satellites.
+                    Weather records on global scales began in the middle of the
+                    19th century with measurements of temperature and
+                    sea-levels. Measurements which depend on more sophisticated
+                    apparatus, such as concentration measuring, commenced about
+                    a century later. Our records can be extended to millions of
+                    years, using paleoclimate reconstructions. Together, they
+                    provide inside into the long- and short-term changes in the
+                    climate system.
+                </p>
+                <br />
+                <h5>Atmosphere</h5>
+                <p class="text-justify">
+                    Mean temperatures of the last three decades have been
+                    successively warmer than any other decade since 1850. Mean
+                    temperature for less than a decade is not regarded as a
+                    suitable variable for climate, since natural variability
+                    dominates at short time-scales. The warming trend is
+                    measureable for nearly the entire globe, with the exception
+                    of the Atlantic Ocean. Over the period 1880 to 2012, the
+                    global average surface temperature increased by 0.85°C.
+                </p>
+                <p class="text-justify">
+                    Also, more frequent warmer days and nights and fewer cold
+                    days and nights have been detected over land area.
+                </p>
+                <h5>Oceans and sea level</h5>
+                <p class="text-justify">
+                    Warming of the atmosphere causes heat transfer to the
+                    oceans. Ocean warming has been observed to be largest near
+                    the surface. The ocean can store up to 90% of the extra
+                    energy in the climate system accumulated until 2010. But
+                    heat transfer is a slow process that will take hundreds of
+                    years to complete.
+                </p>
+                <p class="text-justify">
+                    Besides heat the ocean can also absorb carbon dioxide. About
+                    30% of the emitted anthropogenic carbon dioxide has been
+                    absorbed by the ocean, causing ocean acidification.
+                </p>
+                <p class="text-justify">
+                    As the ocean is heated water expands, posing the largest
+                    contribution to global sea-level rise. Additionally, melted
+                    ice from on land glaciers and ice sheets increases this
+                    effect. Global sea-level has risen in rates of 3.2 mm/yr
+                    between 1993 and 2010. Further sea-level rise poses a risk
+                    to seaports, islands and deep countries alike.
+                </p>
+                <br />
+                <h5>Cryosphere</h5>
+                <p class="text-justify">
+                    The term cryosphere describes the portion of Earth’s surface
+                    that is covered by frozen water. This includes glaciers, sea
+                    ice, ice sheets and frozen ground (permafrost).
+                </p>
+                <p class="text-justify">
+                    Ice loss is largest for continental glaciers, followed by
+                    ice loss from the Greenland ice sheet. While the Arctic sea
+                    ice shows clear trends of melting, trends in the Antarctic
+                    differ a lot by region. Northern Hemisphere snow cover has
+                    decreased since 1950 and permafrost temperatures have risen.
+                    Further temperature rise of permafrost soils could lead to
+                    large-scale defrosting, causing further emissions of carbon
+                    dioxide.
+                </p>
+                <br />
+                <h5>Precipitation and extreme weather events</h5>
+                <p class="text-justify">
+                    Both heating of land mass and the oceans, is also
+                    responsible for changes in large-scale patterns of
+                    precipitation. Precipitation patterns vary a lot by region,
+                    e.g. rainfall in the Mediterranean region decreases, while
+                    in the rest of Europe an increase has been detected.
+                </p>
+                <p class="text-justify">
+                    Changes in many extreme weather and climate events have been
+                    observed since about 1950. For example, frequency and
+                    duration of heat waves increased over most land areas. Also,
+                    more frequent and intense heavy precipitation events were
+                    recorded.
+                </p>
+                <img
+                    src="https://ar5-syr.ipcc.ch/ipcc/sites/default/files/AR5_SYR_Figure_1.1.png"
+                    alt="Observed change in the climate system. Data from IPCC AR5."
+                    class="img-fluid d-block mx-auto"
+                />
+                <br />
+                <br />
+
+                <span class="anchor" id="attributionOfObservedChanges"></span>
+                <h3>Attribution of Observed Changes</h3>
+                <br />
+                <p class="text-justify">
+                    From observing the climate system, we know that time and
+                    process of global warming match with industrialisation. It
+                    is known that since the beginning of industrialisation,
+                    concentration of greenhouse gases in the atmosphere
+                    increased by nearly 50%. From the section on radiative
+                    forcing (link here?) we know that our industrialised world
+                    causes a positive RF in total.
+                </p>
+                <p class="text-justify">
+                    But can we really link positive RF to the observed changes
+                    in climate? Or could spontaneous variability in the climate
+                    system cause these changes?
+                </p>
+                <br />
+                <h5>Do uncertainties allow for natural causes?</h5>
+                <p class="text-justify">
+                    Natural variability of the climate system has to be observed
+                    and understood to rule natural causes out as the driver of
+                    climate change. Palaeoclimatology, the study of climates for
+                    which direct measurements were not taken, is used to
+                    reconstruct ancient climate.
+                </p>
+
+                <div class="accordion" id="accordionIA">
+                    <div class="card border rounded">
+                        <div
+                            class="card-header info-drop__button info-drop__button--active"
+                            id="headingTwo"
+                        >
+                            <div class="mb-0">
+                                <button
+                                    class="btn btn-block d-flex align-items-center justify-content-between"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#isotopeAnalysisCollapse"
+                                    aria-expanded="false"
+                                    aria-controls="isotopeAnalysisCollapse"
+                                    onclick="handleHeaderClick(headingTwo)"
+                                >
+                                    <h5 class="">
+                                        Isotope analysis: determining ancient
+                                        water temperature
+                                    </h5>
+                                    <div class="mb-2 arrow">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="20"
+                                            height="20"
+                                            fill="currentColor"
+                                            class="bi bi-caret-up-fill"
+                                            viewBox="0 0 16 16"
+                                        >
+                                            <path
+                                                d="M7.247 4.86l-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+                                            />
+                                        </svg>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div
+                            id="isotopeAnalysisCollapse"
+                            class="collapse show"
+                            aria-labelledby="headingTwo"
+                            data-parent="#accordionSTWA"
+                        >
+                            <div class="card-body">
+                                <p class="card-text">
+                                    In Palaeoclimateology, it is common practice
+                                    to take drill cores from the sea floor.
+                                    These drill cores are composed of sediment
+                                    layers, with the oldest layers at the bottom
+                                    and the youngest ones at the top of the
+                                    sample.
+                                </p>
+
+                                <p class="card-text">
+                                    One way of determining the temperature of
+                                    the ocean that once covered a sediment layer
+                                    is to chemically analyse the ration of O16-
+                                    and O18- isotopes. Isotopes are variants of
+                                    one chemical element which differ in neutron
+                                    number. The isotope ration for oxygen
+                                    depends on temperature, as water molecules
+                                    with the lighter O16 evaporate more easily.
+                                </p>
+
+                                <p class="card-text">
+                                    Through chemical reactions oxygen is stored
+                                    into the sediment layers. When both, the
+                                    measured isotope ratio and age of the layer
+                                    are taken into account, drill cores function
+                                    as chemical photos of water temperatures at
+                                    ancient times.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <p class="text-justify">
+                    From paleoclimate reconstructions we know that warmer and
+                    colder periods occurred, even without industrialisation.
+                    They were caused for example by variations in the orbit of
+                    the Earth around the Sun or its own axis. These variations
+                    usually had time-scales of 10 000 to 100 000 years.
+                </p>
+                <p class="text-justify">
+                    Reconstructions reveal that every time it got warmer, an
+                    increase in CO2 concentration followed. Initially small
+                    variations in temperature increase because more CO2 is
+                    emitted from warmer oceans. This avalanche effect can
+                    trigger a switch from a cold to a warm stage. This allows
+                    for speculation if human activity is really driving climate
+                    change.
+                </p>
+                <p class="text-justify">
+                    However, natural variation is also well understood and can
+                    be included into climate models. In figure 6, you can see a
+                    comparison of how well models using only natural forcings
+                    and combined models of anthropogenic and natural forcings
+                    fit the data. From looking at the graphs it should be clear
+                    that the combined model matches the data best. It is
+                    virtually certain that natural causes alone are not
+                    responsible for climate change.
+                </p>
+                <img
+                    src="./assets/mechanism/figure7.PNG"
+                    alt="Comparison of observed and simulated climate change for two models"
+                    class="img-fluid d-block mx-auto"
+                />
+                <br />
+                <br />
+                <h5>Bio-Energy with Carbon Capture and Storage</h5>
+                <br />
+                <p class="text-justify">
+                    Bio-Energy with Carbon Capture and Storage (BECCS) is a way
+                    to combat climate change with photosynthesis but it is more
+                    complicated than just planting trees. BECCS is the process
+                    of extracting bioenergy from biomass and capturing and
+                    storing the carbon to remove it from the atmosphere. For the
+                    most common example, the energy plants, like trees with a
+                    short growth cycle and crops, will be planted and grow. And,
+                    as the plants grow, they will absorb the CO2 out of the air.
+                    Then, once the plants are grown, carbon will be contained in
+                    the plants while biomass is extracted for biofuel
+                    production. After that, the biofuel can be used to power
+                    cars, planes or even industries, and the carbon
+                    is capture to be stored or can be used to make products like
+                    concrete.
+                </p>
+                <br />
+                <img
+                    src="https://350bayarea.org/wp-content/uploads/2018/05/beccs.png"
+                    alt="BECCS methods diagram"
+                    class="img-fluid p-1"
+                />
+                <br />
+                <span class="anchor" id="usesOfCapturedCarbon"></span>
+                <h3>Uses of captured carbon</h3>
+                <br />
+                <p class="text-justify">
+                    Most of captured CO2 would be made into Calcium Carbonate
+                    through few chemical processes as for it would easier to be
+                    transported because actually there is a number of industries
+                    need CO2 as a raw material. For the most common examples:
+                    CO2 is used in beverage industry to make products like coke;
+                    in fire extinguishers it is used as a refrigerant; also
+                    promoting the growth of plants in greenhouses. However, with
+                    the innovation of the technology, CO2 can be used as a raw
+                    material to make oil.
+                </p>
+
+                <p class="text-justify">
+                    According to an article published on Nature Communications
+                    on May 2nd 2017, a catalyst for making high-octane gasoline
+                    directly from hydrogen and carbon dioxide was invented,
+                    which means the most important greenhouse gas, CO2, can be
+                    used as an source of energy.
                 </p>
             </div>
         </div>
 
         <footer>
-            <div class="jumbotron" style="background-color: #0096ff;">
-                <h1 class="display-4 row justify-content-md-center">
-                    Footer
-                </h1>
+            <div class="jumbotron" style="background-color: #f8f8f8;">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./assets/durham-university-2019.png"
+                        alt="Durham university"
+                        class="img-fluid align-self-center mx-auto my-4"
+                        id="durham-badge"
+                    />
+                </div>
             </div>
         </footer>
 
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
             crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="scripts.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
         ></script>
     </body>
 </html>

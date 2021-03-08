@@ -16,6 +16,7 @@ function handleArrowClick(doc) {
 lastHeader = 'headingOne';
 
 function handleHeaderClick(doc) {
+    // console.log(doc);
     doc.classList.toggle('info-drop__button--active');
     if (lastHeader === doc.id) return;
     if (
