@@ -13,14 +13,19 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="./styles.css" />
+        <link
+            rel="shortcut icon"
+            type="image/x-icon"
+            href="/assets/favicon.ico"
+        />
 
-        <title></title>
+        <title>Climate | Modelling</title>
     </head>
     <body>
         <nav class="navbar home__nav home__nav--top fixed-top navbar-dark">
-            <a class="navbar-brand" href="/">Climate</a>
+            <a class="navbar-brand home__nav__shadow" href="/">Climate</a>
             <button
-                class="navbar-toggler"
+                class="navbar-toggler home__nav__shadow"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarSupportedContent"
@@ -29,240 +34,566 @@
                 aria-label="Toggle navigation"
                 onClick="handleNavToggle()"
             >
-                <span class="navbar-toggler-icon"></span>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-list home__nav__shadow"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="climateModelingPage.html"
-                            >Modeling the climate</a
-                        >
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item d-flex">
                         <a class="nav-link" href="climateMechanismPage.html"
                             >Mechanism of climate change</a
                         >
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="captureOffsetPage.html"
-                            >Carbon capture and Carbon offset</a
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseMechanism"
+                            aria-expanded="false"
+                            aria-controls="collapseMechanism"
+                            onclick="handleArrowClick(arrowMechanism)"
                         >
+                            <svg
+                                id="arrowMechanism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="politicalImpactPage.html"
-                            >Political impact on climate change</a
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
                         >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#radiationBalanceOfTheEarth"
+                                >Radiation balance of the Earth</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#driversOfClimateChange"
+                                >Drivers of Climate Change</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#observedClimateChanges"
+                                >Observed Climate Changes</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#attributionOfObservedChanges"
+                                >Attribution of Observed Changes</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#projectionsOfFutureChanges"
+                                >Projections of Future Changes</a
+                            >
+                        </li>
+                        <li
+                            id="collapseMechanism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateMechanismPage.html#conclusion"
+                                >Conclusion</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateModelingPage.html"
+                            >Modeling the climate</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseModeling"
+                            aria-expanded="false"
+                            aria-controls="collapseModeling"
+                            onclick="handleArrowClick(arrowModellingClimate)"
+                        >
+                            <svg
+                                id="arrowModellingClimate"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="personalImpactPage.html"
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#CurrentMethods"
+                                >Current methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#FutureMethods"
+                                >Future methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#DigitalTwins"
+                                >Digital twins</a
+                            >
+                        </li>
+                        <li
+                            id="collapseModeling"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateModelingPage.html#IsClimateChangeReal"
+                                >Is climate change real?</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="carbonCapturePage.html"
+                            >Carbon capture</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseCapture"
+                            aria-expanded="false"
+                            aria-controls="collapseCapture"
+                            onclick="handleArrowClick(arrowCarbonCapture)"
+                        >
+                            <svg
+                                id="arrowCarbonCapture"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseCapture"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonCapturePage.html#seperationOfCarbonDioxideInPowerPlants"
+                                >Seperation of carbon dioxide in power plants</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCapture"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonCapturePage.html#mainCarbonCaptureMethods"
+                                >Main carbon capture methods</a
+                            >
+                        </li>
+                        <li
+                            id="collapseCapture"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonCapturePage.html#usesOfCapturedCarbon"
+                                >Uses of captured carbon</a
+                            >
+                        </li>
+                    </ul>
+
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="carbonOffsetPage.html"
+                            >Carbon offset</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseOffset"
+                            aria-expanded="false"
+                            aria-controls="collapseOffset"
+                            onclick="handleArrowClick(arrowCarbonOffset)"
+                        >
+                            <svg
+                                id="arrowCarbonOffset"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whyShouldWeSupportCarbonOffset"
+                                >Why should we support carbon offset?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whereToBuyCarbonCredits"
+                                >Where to buy carbon credits</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
+                        <a class="nav-link" href="climateActivismPage.html"
+                            >Climate activism</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapseActivism"
+                            aria-expanded="false"
+                            aria-controls="collapseActivism"
+                            onclick="handleArrowClick(arrowClimateActivism)"
+                        >
+                            <svg
+                                id="arrowClimateActivism"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#publicConsensus"
+                                >Public Consensus</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#whatCanAnIndividualDo"
+                                >What can an individual do?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseActivism"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/climateActivismPage.html#caseStudies"
+                                >Case studies</a
+                            >
+                        </li>
+                    </ul>
+                    <li class="nav-item d-flex">
+                        <a
+                            class="nav-link active"
+                            href="personalImpactPage.html"
                             >Personal Impact on climate change</a
                         >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
                     </li>
+                    <ul class="navbar-nav ml-3">
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
+                            >
+                        </li>
+                    </ul>
                 </ul>
             </div>
         </nav>
 
         <div
-            class="jumbotron"
-            id="example__jumbotron"
-            style="background-color: #64a7e9;"
+            class="jumbotron d-flex justify-content-center align-items-center"
+            id="climateModeling__jumbotron"
         >
-            <h1
-                class="display-4 row justify-content-md-center p-4 jumbotron__title"
-            >
-                <strong>Title of this page</strong>
+            <h1 class="display-4 text-center jumbotron__title">
+                <strong>Climate Modelling</strong>
             </h1>
         </div>
 
-        <div class="container">
+        <div class="container" id="content">
             <div class="p-2">
                 <p class="text-justify" style="font-size: large;">
-                    A breif summary of what this page is about and what is going
-                    to be addressed. Basically an abstract. abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract abstract
-                    abstract abstract abstract abstract abstract.
+                    ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT
+                    ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT
+                    ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT
+                    ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT
+                    ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT
+                    ABSTRACT ABSTRACT ABSTRACT ABSTRACT ABSTRACT
                 </p>
                 <hr />
-                <div class="container">
+                <div class="d-flex align-items-center justify-content-around">
+                    <p class="text-center m-0">
+                        By <strong>Indraji Wanigaratne</strong>
+                    </p>
+
+                    <p class="text-center m-0 mx-2">
+                        |
+                    </p>
                     <div
-                        class="d-flex align-items-center justify-content-around"
+                        class="d-flex align-items-center justify-content-center"
                     >
-                        <p class="text-center m-0">
-                            By <strong>Author</strong>
-                        </p>
-
-                        <p class="text-center m-0 mx-2">
-                            |
-                        </p>
-                        <div
-                            class="d-flex align-items-center justify-content-center"
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-calendar-event-fill"
+                            viewBox="0 0 16 16"
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-calendar-event-fill"
-                                viewBox="0 0 16 16"
-                            >
-                                <path
-                                    d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"
-                                />
-                            </svg>
-                            <p class="text-center m-0 px-2">20 Jan 2021</p>
-                        </div>
+                            <path
+                                d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"
+                            />
+                        </svg>
+                        <p class="text-center m-0 px-2">9 Mar 2021</p>
+                    </div>
 
-                        <p class="fs-1 text-center m-0 mx-2">
-                            |
-                        </p>
-                        <div
-                            class="d-flex align-items-center justify-content-center"
+                    <p class="fs-1 text-center m-0 mx-2">
+                        |
+                    </p>
+                    <div
+                        class="d-flex align-items-center justify-content-center"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-clock-fill"
+                            viewBox="0 0 16 16"
                         >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-clock-fill"
-                                viewBox="0 0 16 16"
-                            >
-                                <path
-                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
-                                />
-                            </svg>
-                            <p class="text-center m-0 px-2">10 min</p>
-                        </div>
+                            <path
+                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"
+                            />
+                        </svg>
+                        <p class="text-center m-0 px-2">15 min</p>
                     </div>
                 </div>
                 <hr />
-
-                <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
-                    nisi. Quisque sollicitudin posuere erat. Vivamus hendrerit
-                    tempus est sit amet sollicitudin. Vivamus convallis vitae
-                    elit et vestibulum. Nullam ac erat lorem. Fusce vel tempor
-                    odio, non ullamcorper augue. Etiam risus erat, cursus a dui
-                    eget, laoreet venenatis elit. Sed mattis massa orci, ac
-                    convallis lectus imperdiet ac. In bibendum pretium
-                    consectetur. Aliquam et neque non nulla posuere faucibus.
-                    Cras interdum enim a justo aliquam porta.
-                </p>
-                <p class="text-justify">
-                    Phasellus sed ex et mi consectetur auctor sit amet non
-                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
-                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
-                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
-                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
-                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
-                    Proin tristique, dolor ac eleifend viverra, nunc augue
-                    cursus metus, quis commodo purus mauris at ligula.
-                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
-                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
-                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
-                    vulputate erat tempus vitae. Proin ultricies sodales felis
-                    non sodales. Praesent euismod sapien sit amet mi vulputate,
-                    sed volutpat turpis facilisis. Phasellus egestas dui
-                    scelerisque massa condimentum, non viverra felis consequat.
-                    Curabitur imperdiet vehicula metus, non venenatis ex
-                    placerat nec. Sed sed ornare massa.
-                </p>
-                <p class="text-justify">
-                    Duis facilisis sed leo nec molestie. Fusce sed viverra
-                    lectus. Praesent ex eros, tempor commodo interdum eget,
-                    pellentesque quis velit. Nullam sed lobortis elit. Sed
-                    molestie turpis auctor felis mollis faucibus. Curabitur
-                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
-                    sagittis nisi egestas a.
-                </p>
-                <p class="text-justify">
-                    Pellentesque risus justo, ullamcorper id velit eget,
-                    scelerisque molestie massa. In efficitur, nunc aliquet
-                    efficitur condimentum, nisi erat tristique magna, ac viverra
-                    nibh lorem id tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Maecenas in sem massa. Praesent
-                    porttitor sapien eget ante euismod, quis convallis quam
-                    condimentum. Class aptent taciti sociosqu ad litora torquent
-                    per conubia nostra, per inceptos himenaeos. Sed et nunc
-                    scelerisque, auctor tortor vel, elementum nisl. Cras
-                    placerat fringilla erat, in fringilla lorem fringilla at.
-                </p>
-                <p class="text-justify">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aenean elit ligula, vehicula eget nulla sed, ultrices tempus
-                    nisi. Quisque sollicitudin posuere erat. Vivamus hendrerit
-                    tempus est sit amet sollicitudin. Vivamus convallis vitae
-                    elit et vestibulum. Nullam ac erat lorem. Fusce vel tempor
-                    odio, non ullamcorper augue. Etiam risus erat, cursus a dui
-                    eget, laoreet venenatis elit. Sed mattis massa orci, ac
-                    convallis lectus imperdiet ac. In bibendum pretium
-                    consectetur. Aliquam et neque non nulla posuere faucibus.
-                    Cras interdum enim a justo aliquam porta.
-                </p>
-                <p class="text-justify">
-                    Phasellus sed ex et mi consectetur auctor sit amet non
-                    velit. Phasellus sit amet velit mattis, auctor nunc luctus,
-                    dapibus enim. Fusce in euismod tellus, vel porttitor ante.
-                    Pellentesque nec eleifend elit, sed hendrerit ligula. Etiam
-                    tincidunt tortor eu lectus lobortis, ac aliquet nulla
-                    pharetra. Aliquam eu aliquam lacus, et facilisis purus.
-                    Proin tristique, dolor ac eleifend viverra, nunc augue
-                    cursus metus, quis commodo purus mauris at ligula.
-                    Vestibulum at commodo erat. Sed sem arcu, vehicula at mauris
-                    id, lacinia posuere libero. Praesent sit amet erat ut tortor
-                    sollicitudin lacinia. Maecenas ultrices lacus ligula, mattis
-                    vulputate erat tempus vitae. Proin ultricies sodales felis
-                    non sodales. Praesent euismod sapien sit amet mi vulputate,
-                    sed volutpat turpis facilisis. Phasellus egestas dui
-                    scelerisque massa condimentum, non viverra felis consequat.
-                    Curabitur imperdiet vehicula metus, non venenatis ex
-                    placerat nec. Sed sed ornare massa.
-                </p>
-                <p class="text-justify">
-                    Duis facilisis sed leo nec molestie. Fusce sed viverra
-                    lectus. Praesent ex eros, tempor commodo interdum eget,
-                    pellentesque quis velit. Nullam sed lobortis elit. Sed
-                    molestie turpis auctor felis mollis faucibus. Curabitur
-                    vehicula suscipit lectus. Etiam ultricies ipsum elit, in
-                    sagittis nisi egestas a.
-                </p>
-                <p class="text-justify">
-                    Pellentesque risus justo, ullamcorper id velit eget,
-                    scelerisque molestie massa. In efficitur, nunc aliquet
-                    efficitur condimentum, nisi erat tristique magna, ac viverra
-                    nibh lorem id tortor. Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Maecenas in sem massa. Praesent
-                    porttitor sapien eget ante euismod, quis convallis quam
-                    condimentum. Class aptent taciti sociosqu ad litora torquent
-                    per conubia nostra, per inceptos himenaeos. Sed et nunc
-                    scelerisque, auctor tortor vel, elementum nisl. Cras
-                    placerat fringilla erat, in fringilla lorem fringilla at.
-                </p>
             </div>
         </div>
 
         <footer>
-            <div class="jumbotron" style="background-color: #0096ff;">
-                <h1 class="display-4 row justify-content-md-center">
-                    Footer
-                </h1>
+            <div class="jumbotron" style="background-color: #f8f8f8;">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <div class="mx-auto">
+                        <ul>
+                            <strong>Further reading</strong>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                            <li><a href="">link</a></li>
+                        </ul>
+                    </div>
+                    <img
+                        src="./assets/durham-university-2019.png"
+                        alt="Durham university"
+                        class="img-fluid align-self-center mx-auto my-4"
+                        id="durham-badge"
+                    />
+                </div>
             </div>
         </footer>
-
         <script
             src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
