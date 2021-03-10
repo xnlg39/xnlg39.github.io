@@ -1,6 +1,6 @@
 :root {
     --nav-color: #00e689;
-    --nav-color-highlight: #3c6cbb;
+    --nav-color-highlight: #00e68936;
 }
 
 body a:hover {
@@ -127,6 +127,10 @@ body a:hover {
     max-width: 350px;
     height: 300px;
 }
+.home__card:hover {
+    background-color: var(--nav-color-highlight) !important;
+    transition: background 0.5s ease;
+}
 /* -------------Info drops------------- */
 .info-drop__button {
     /* background-color: var(--nav-color) !important; */
@@ -180,6 +184,26 @@ body a:hover {
     -webkit-transform: none;
 }
 /* -----------footer styles----------- */
+footer {
+    height: 400px;
+}
 footer ul {
     list-style-type: none;
+}
+footer ol {
+    counter-reset: listCounter;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: auto;
+    padding-left: 0px;
+}
+footer ol li {
+    list-style: none;
+    counter-increment: listCounter;
+    margin: 0 10px;
+}
+footer ol li:before {
+    content: '[' counter(listCounter) '] - ';
 }
