@@ -146,6 +146,11 @@ body a:hover {
     background-color: var(--nav-color) !important;
     transition: background 0.5s ease;
 }
+/* ------------bibliography------------ */
+.bibliography__card {
+    width: 500px;
+    height: auto;
+}
 /* ----------climate activism---------- */
 .chart {
     width: 350px !important;
@@ -184,6 +189,22 @@ body a:hover {
     -webkit-transform: none;
 }
 /* -----------footer styles----------- */
+.references {
+    counter-reset: listCounter;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: auto; */
+    padding-left: 0px;
+}
+.references li {
+    list-style: none;
+    counter-increment: listCounter;
+    margin: 0 10px;
+}
+.references li:before {
+    content: '[' counter(listCounter) '] - ';
+}
 footer {
     height: 400px;
 }
@@ -196,7 +217,6 @@ footer ol {
     height: inherit;
     display: flex;
     flex-direction: column;
-
     margin-left: auto;
     padding-left: 0px;
 }
@@ -208,3 +228,7 @@ footer ol li {
 footer ol li:before {
     content: '[' counter(listCounter) '] - ';
 }
+/* footer a:link,
+a:visited {
+    color: var(--secondary);
+} */
