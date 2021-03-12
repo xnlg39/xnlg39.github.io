@@ -26,7 +26,7 @@ body a:hover {
 #mechanism__jumbotron {
     background: url(./assets/mechanism/mechanismBannerImg2.png) no-repeat center
         center;
-    background-color: blue;
+    background-color: #fe7042;
     background-position: center 65%;
     background-size: cover;
     color: white;
