@@ -24,9 +24,10 @@ body a:hover {
     border-radius: 0px 0px 5px 5px;
 }
 #mechanism__jumbotron {
-    background: url(./assets/mechanism/mechanismBannerImg.jpg) no-repeat center
+    background: url(./assets/mechanism/mechanismBannerImg2.png) no-repeat center
         center;
-    background-position: center 59%;
+    background-color: blue;
+    background-position: center 65%;
     background-size: cover;
     color: white;
     height: 400px;
