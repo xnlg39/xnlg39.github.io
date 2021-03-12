@@ -51,7 +51,7 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item d-flex">
+                    <li class="nav-item active d-flex">
                         <a
                             class="nav-link active"
                             href="climateMechanismPage.html"
@@ -86,6 +86,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -97,6 +99,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -108,6 +112,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -119,6 +125,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -130,6 +138,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -141,6 +151,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -150,8 +162,10 @@
                         </li>
                     </ul>
 
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="climateModelingPage.html"
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="climateModelingPage.html"
                             >Modeling the climate</a
                         >
                         <div
@@ -183,6 +197,8 @@
                             id="collapseModeling"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -194,6 +210,8 @@
                             id="collapseModeling"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -201,31 +219,93 @@
                                 >Future methods</a
                             >
                         </li>
+                    </ul>
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="personalImpactPage.html"
+                            >Personal Impact on climate change</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
                         <li
-                            id="collapseModeling"
+                            id="collapsePersonal"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/climateModelingPage.html#DigitalTwins"
-                                >Digital twins</a
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
                             >
                         </li>
                         <li
-                            id="collapseModeling"
+                            id="collapsePersonal"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/climateModelingPage.html#IsClimateChangeReal"
-                                >Is climate change real?</a
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="carbonCapturePage.html"
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link active" href="carbonCapturePage.html"
                             >Carbon capture</a
                         >
                         <div
@@ -268,6 +348,8 @@
                             id="collapseCapture"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -279,6 +361,8 @@
                             id="collapseCapture"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -288,8 +372,8 @@
                         </li>
                     </ul>
 
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="carbonOffsetPage.html"
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link active" href="carbonOffsetPage.html"
                             >Carbon offset</a
                         >
                         <div
@@ -321,27 +405,59 @@
                             id="collapseOffset"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#whyShouldWeSupportCarbonOffset"
-                                >Why should we support carbon offset?</a
+                                href="/carbonOffsetPage.html#whatIsCarbonOffset"
+                                >What is Carbon Offset?</a
                             >
                         </li>
                         <li
                             id="collapseOffset"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#whereToBuyCarbonCredits"
-                                >Where to buy carbon credits</a
+                                href="/carbonOffsetPage.html#whyBuyCarbonOffsets"
+                                >Why Buy Carbon Offsets?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whereCanYouBuyCarbonOffsets"
+                                >Where Can You Buy Carbon Offsets?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#carbonOffsettingCriticisms"
+                                >Carbon Offsetting Criticisms?</a
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="climateActivismPage.html"
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="climateActivismPage.html"
                             >Climate activism</a
                         >
                         <div
@@ -373,6 +489,8 @@
                             id="collapseActivism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -384,6 +502,8 @@
                             id="collapseActivism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -395,6 +515,8 @@
                             id="collapseActivism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -403,21 +525,21 @@
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="personalImpactPage.html"
-                            >Personal Impact on climate change</a
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link active" href="bibliography.html"
+                            >Bibliography</a
                         >
                         <div
                             class="nav-link px-1"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#collapsePersonal"
+                            data-target="#collapseBibliography"
                             aria-expanded="false"
-                            aria-controls="collapsePersonal"
-                            onclick="handleArrowClick(arrowPersonalImpact)"
+                            aria-controls="collapseBibliography"
+                            onclick="handleArrowClick(arrowBibliography)"
                         >
                             <svg
-                                id="arrowPersonalImpact"
+                                id="arrowBibliography"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
                                 height="16"
@@ -433,47 +555,81 @@
                     </li>
                     <ul class="navbar-nav ml-3">
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#energy"
-                                >Energy</a
+                                href="/bibliography.html#mechanismOfClimateChange"
+                                >Mechanism of Climate Change</a
                             >
                         </li>
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#heating"
-                                >Heating</a
+                                href="/bibliography.html#modellingTheClimate"
+                                >Modelling the Climate</a
                             >
                         </li>
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#food"
-                                >Food</a
+                                href="/bibliography.html#personalImpactOnClimateChange"
+                                >Personal Impact on Climate Change</a
                             >
                         </li>
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#transport"
-                                >Transport</a
+                                href="/bibliography.html#carbonCapture"
+                                >Carbon Capture</a
+                            >
+                        </li>
+                        <li
+                            id="collapseBibliography"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/bibliography.html#carbonOffset"
+                                >Carbon Offset</a
+                            >
+                        </li>
+                        <li
+                            id="collapseBibliography"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/bibliography.html#climateActivism"
+                                >Climate Activism</a
                             >
                         </li>
                     </ul>
@@ -555,10 +711,14 @@
                     global and regional scales. These changes include a broad
                     range of observed effects, one of them being global warming.
                     The period of recent anthropogenic climate change has been
-                    apparent since the mid to late 20th century. Both the
-                    climate system and its changes have been studied in detail
-                    by scientists around the world to understand the underlying
-                    causes of the observed effects. Research includes
+                    apparent since the mid to late 20th century
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Both the climate system and its changes have been studied
+                    in detail by scientists around the world to understand the
+                    underlying causes of the observed effects. Research includes
                     interdisciplinary work, ranging from environmental physics
                     and meteorology to atomic physics and biochemistry.
                 </p>
@@ -590,9 +750,14 @@
                     Earth emits radiation as well, only at much longer
                     wavelengths (infrared). The more radiation the Earth absorbs
                     and the less radiation re-emitted into space, the higher the
-                    temperature on Earth. Therefore, it is vital to understand
-                    the mechanism by which the Earth absorbs radiation from the
-                    Sun and emits infrared radiation.
+                    temperature on Earth
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >. Therefore, it is vital to understand the mechanism by
+                    which the Earth absorbs radiation from the Sun and emits
+                    infrared radiation.
                 </p>
                 <br />
                 <h5>
@@ -601,15 +766,19 @@
                 <br />
                 <p class="text-justify">
                     These processes are described in their most basic form by
-                    Planck’s radiation law for black bodies. A black body is an
-                    idealised object which absorbs radiation of all wavelengths
-                    to 100%. A black body in thermal equilibrium, i.e. at a
-                    constant temperature, emits electromagnetic black-body
-                    radiation, which is described by Planck’s radiation
-                    equation. It describes the spectral radiance B, i.e. how
-                    much radiation is emitted per unit area and unit solid
-                    angle, as a function of wavelength. The equation takes the
-                    form:
+                    Planck’s radiation law for black bodies
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >. A black body is an idealised object which absorbs
+                    radiation of all wavelengths to 100%. A black body in
+                    thermal equilibrium, i.e. at a constant temperature, emits
+                    electromagnetic black-body radiation, which is described by
+                    Planck’s radiation equation. It describes the spectral
+                    radiance B, i.e. how much radiation is emitted per unit area
+                    and unit solid angle, as a function of wavelength. The
+                    equation takes the form:
                 </p>
 
                 <p>
@@ -657,14 +826,24 @@
                     space. In scientific terms, we say that the surface
                     reflectivity, also called albedo, in the visible regime is
                     greater than zero. About 30% of radiation from the Sun is
-                    reflected, mainly by clouds, snow and ice.
+                    reflected, mainly by clouds, snow and ice
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Just like Earth doesn’t absorb all radiation perfectly, its
                     emission in the infrared regime is also lowered. The mean
                     emissivity, i.e. the effectiveness in emitting energy as
                     radiation in the infrared regime, is only about 95% of those
-                    of an idealised black body.
+                    of an idealised black body
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Because of these imperfect absorption and emission
@@ -760,7 +939,12 @@
                                 <p class="card-text">
                                     We can obtain the surface temperature \(T\)
                                     of the Earth by assuming equilibrium of
-                                    incoming and outgoing radiation:
+                                    incoming and outgoing radiation
+                                    <a
+                                        target="_blank"
+                                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                                        >[3]</a
+                                    >:
                                 </p>
 
                                 <strong>equation</strong>
@@ -791,9 +975,13 @@
                     the atmosphere has a large effect on climate conditions.
                     Particularly, the well-known greenhouse gases contribute
                     largely to the warming of Earth, even though they only make
-                    up about 0.1% of the atmosphere. To understand why this is,
-                    we have to take a look at the absorption and transmission
-                    properties of the atmosphere.
+                    up about 0.1% of the atmosphere
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. To understand why this is, we have to take a look at the
+                    absorption and transmission properties of the atmosphere.
                 </p>
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Atmospheric_Transmission.png"
@@ -832,7 +1020,12 @@
                     Earth’s surface of about 30°C, from -15°C to +15°C. The
                     largest contribution to the natural greenhouse effect comes
                     from water (about 62%), with carbon dioxide being second
-                    with 22%.
+                    with 22%
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-us/Atmospheric+Chemistry+and+Physics%3A+From+Air+Pollution+to+Climate+Change%2C+3rd+Edition-p-9781118947401"
+                        >[4]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Starting from the natural greenhouse effect it is easy to
@@ -854,7 +1047,12 @@
                     best estimates for the magnitudes of the globally averaged
                     energy balance components together with their uncertainty
                     ranges. Numbers are based on the latest climate report of
-                    the IPCC (AR5,2013).
+                    the IPCC (AR5,2013)
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <img
                     src="https://iac.ethz.ch/group/climate-and-water-cycle/research/radiation-and-the-hydrological-cycle/revaluation-of-the-global-energy-balance/_jcr_content/par/textimage/image.imageformat.lightbox.150311746.jpg"
@@ -881,11 +1079,15 @@
                 <p class="text-justify">
                     Reality is still much more complex. Scientists have to take
                     into account absorption spectra, concentration profiles of
-                    trace gases, clouds, latitudinal and seasonal variation. For
-                    our consideration, these calculations are far too complex.
-                    Nevertheless, it is interesting to take a look at the
-                    parameters that have been identified by scientists as key
-                    for climate conditions and to investigate how these
+                    trace gases, clouds, latitudinal and seasonal variation
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >. For our consideration, these calculations are far too
+                    complex. Nevertheless, it is interesting to take a look at
+                    the parameters that have been identified by scientists as
+                    key for climate conditions and to investigate how these
                     parameters drive climate change.
                 </p>
                 <div class="card mx-auto" style="max-width: 600px;">
@@ -896,7 +1098,7 @@
                             <img
                                 src="https://ecometrica.com/wp-content/uploads/2018/10/ipcc-logo-1.jpg"
                                 class="img-fluid"
-                                alt="WWF logo"
+                                alt="IPCC logo"
                             />
                         </div>
 
@@ -939,7 +1141,16 @@
                     In fact the main driver of climate change is the increase in
                     atmospheric concentrations of greenhouse gases, particularly
                     in carbon dioxide, methane, nitrous oxide and halocarbons,
-                    due to human activity.
+                    due to human activity
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    ><a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     While all of these gases trap thermal energy within the
@@ -948,15 +1159,25 @@
                     methane comes from agricultural practices and nitrous oxide
                     accrues during the burning of fossil fuel. Halocarbons on
                     the other hand are mostly man-made chemicals, which have
-                    been applied as solvents or refrigerants.
+                    been applied as solvents or refrigerants
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Carbon dioxide surely is the most well-kown greenhouse gas.
                     Its atmospheric concentration has been measured since the
-                    1950s. Atmospheric concentrations are usually given in parts
-                    per million (ppm). Carbon dioxide concentration shows
-                    seasonal variation, but the upwards trend is clearly visible
-                    (see <strong>figure 4</strong>).
+                    1950s
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Atmospheric concentrations are usually given in parts per
+                    million (ppm). Carbon dioxide concentration shows seasonal
+                    variation, but the upwards trend is clearly visible (see
+                    <strong>figure 4</strong>).
                 </p>
                 <img
                     src="https://geolsoc.files.wordpress.com/2013/05/mauna_loa_carbon_dioxide_apr2013-svg.png"
@@ -977,7 +1198,12 @@
                     quantitatively, the concept of radiative forcing is
                     introduced. Radiative forcing (RF) is defined as the change
                     in the global energy balance of the Earth, relative to
-                    preindustrial times.
+                    preindustrial times
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     RF&gt;0: warming of the Climate System, e.g. CO<sub>2</sub>,
@@ -1021,18 +1247,28 @@
                     understand how the values for radiative forcing are
                     determined. They are calculated taking into account the
                     atmospheric concentration and spatial distribution of the
-                    driver of interest. Since their physical interaction with
-                    radiation can be calculated (see the previous section), the
-                    net effect on the total energy within the climate system is
-                    determined. Additionally, natural drivers, such as variance
-                    in solar activity and volcanic eruptions are included.
+                    driver of interest
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Since their physical interaction with radiation can be
+                    calculated (see the previous section), the net effect on the
+                    total energy within the climate system is determined.
+                    Additionally, natural drivers, such as variance in solar
+                    activity and volcanic eruptions are included.
                 </p>
                 <p class="text-justify">
                     As mentioned above, key uncertainties arise from the effect
                     of aerosols, cloud formation triggered by aerosols, the
                     effect of clouds, ozone and surface reflectivity. However,
                     even the models assuming the smallest reasonable values for
-                    RF still find a RF to be positive.
+                    RF still find a RF to be positive
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     In this section, we learned that total radiative forcing is
@@ -1056,45 +1292,91 @@
                     a century later. Our records can be extended to millions of
                     years, using paleoclimate reconstructions. Together, they
                     provide inside into the long- and short-term changes in the
-                    climate system.
+                    climate system
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    ><a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    ><a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >.
                 </p>
                 <br />
                 <h5>Atmosphere</h5>
                 <p class="text-justify">
                     Mean temperatures of the last three decades have been
-                    successively warmer than any other decade since 1850. Mean
-                    temperature for less than a decade is not regarded as a
-                    suitable variable for climate, since natural variability
-                    dominates at short time-scales. The warming trend is
-                    measureable for nearly the entire globe, with the exception
-                    of the Atlantic Ocean. Over the period 1880 to 2012, the
-                    global average surface temperature increased by 0.85°C.
+                    successively warmer than any other decade since 1850
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Mean temperature for less than a decade is not regarded
+                    as a suitable variable for climate, since natural
+                    variability dominates at short time-scales
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-cu/Environmental+Physics%3A+Sustainable+Energy+and+Climate+Change%2C+3rd+Edition-p-9780470666760"
+                        >[3]</a
+                    >. The warming trend is measureable for nearly the entire
+                    globe, with the exception of the Atlantic Ocean. Over the
+                    period 1880 to 2012, the global average surface temperature
+                    increased by 0.85°C
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Also, more frequent warmer days and nights and fewer cold
-                    days and nights have been detected over land area.
+                    days and nights have been detected over land area
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <h5>Oceans and Sea Level</h5>
                 <p class="text-justify">
                     Warming of the atmosphere causes heat transfer to the
                     oceans. Ocean warming has been observed to be largest near
                     the surface. The ocean can store up to 90% of the extra
-                    energy in the climate system accumulated until 2010. But
-                    heat transfer is a slow process that will take hundreds of
-                    years to complete.
+                    energy in the climate system accumulated until 2010
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >. But heat transfer is a slow process that will take
+                    hundreds of years to complete.
                 </p>
                 <p class="text-justify">
                     Besides heat the ocean can also absorb carbon dioxide. About
                     30% of the emitted anthropogenic carbon dioxide has been
-                    absorbed by the ocean, causing ocean acidification.
+                    absorbed by the ocean, causing ocean acidification
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     As the ocean is heated water expands, posing the largest
                     contribution to global sea-level rise. Additionally, melted
                     ice from on land glaciers and ice sheets increases this
                     effect. Global sea-level has risen in rates of 3.2 mm/yr
-                    between 1993 and 2010. Further sea-level rise poses a risk
-                    to seaports, islands and low-lying countries alike.
+                    between 1993 and 2010
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Further sea-level rise poses a risk to seaports, islands
+                    and low-lying countries alike.
                 </p>
                 <br />
                 <h5>Cryosphere</h5>
@@ -1111,7 +1393,12 @@
                     decreased since 1950 and permafrost temperatures have risen.
                     Further temperature rise of permafrost soils could lead to
                     large-scale defrosting, causing further emissions of carbon
-                    dioxide.
+                    dioxide
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <br />
                 <h5>Precipitation and Extreme Weather Events</h5>
@@ -1120,14 +1407,24 @@
                     responsible for changes in large-scale patterns of
                     precipitation. Precipitation patterns vary a lot by region,
                     e.g. rainfall in the Mediterranean region decreases, while
-                    in the rest of Europe an increase has been detected.
+                    in the rest of Europe an increase has been detected
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Changes in many extreme weather and climate events have been
                     observed since about 1950. For example, frequency and
                     duration of heat waves increased over most land areas. Also,
                     more frequent and intense heavy precipitation events were
-                    recorded.
+                    recorded
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <img
                     src="https://ar5-syr.ipcc.ch/ipcc/sites/default/files/AR5_SYR_Figure_1.1.png"
@@ -1226,11 +1523,16 @@
                                     One way of determining the temperature of
                                     the ocean that once covered a sediment layer
                                     is to chemically analyse the ration of O16-
-                                    and O18- isotopes. Isotopes are variants of
-                                    one chemical element which differ in neutron
-                                    number. The isotope ration for oxygen
-                                    depends on temperature, as water molecules
-                                    with the lighter O16 evaporate more easily.
+                                    and O18- isotopes
+                                    <a
+                                        target="_blank"
+                                        href="https://www.wiley.com/en-us/Atmospheric+Chemistry+and+Physics%3A+From+Air+Pollution+to+Climate+Change%2C+3rd+Edition-p-9781118947401"
+                                        >[4]</a
+                                    >. Isotopes are variants of one chemical
+                                    element which differ in neutron number. The
+                                    isotope ration for oxygen depends on
+                                    temperature, as water molecules with the
+                                    lighter O16 evaporate more easily.
                                 </p>
 
                                 <p class="card-text">
@@ -1251,16 +1553,25 @@
                     colder periods occurred, even without industrialisation.
                     They were caused for example by variations in the orbit of
                     the Earth around the Sun or its own axis. These variations
-                    usually had time-scales of 10 000 to 100 000 years.
+                    usually had time-scales of 10 000 to 100 000 years
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Reconstructions reveal that every time it got warmer, an
                     increase in CO2 concentration followed. Initially small
                     variations in temperature increase because more CO2 is
                     emitted from warmer oceans. This avalanche effect can
-                    trigger a switch from a cold to a warm stage. This allows
-                    for speculation if human activity is really driving climate
-                    change.
+                    trigger a switch from a cold to a warm stage
+                    <a
+                        target="_blank"
+                        href="https://www.wiley.com/en-us/Atmospheric+Chemistry+and+Physics%3A+From+Air+Pollution+to+Climate+Change%2C+3rd+Edition-p-9781118947401"
+                        >[4]</a
+                    >. This allows for speculation if human activity is really
+                    driving climate change.
                 </p>
                 <p class="text-justify">
                     However, natural variation is also well understood and can
@@ -1270,7 +1581,12 @@
                     of anthropogenic and natural forcings fit the data. From
                     looking at the graphs it should be clear that the combined
                     model matches the data best. It is virtually certain that
-                    natural causes alone are not responsible for climate change.
+                    natural causes alone are not responsible for climate change
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <img
                     src="./assets/mechanism/figure7.PNG"
@@ -1347,17 +1663,20 @@
                                 <p class="card-text">
                                     The C0<sub>2</sub> in the atmosphere partly
                                     consists of the radioactive C14 isotope,
-                                    which is produced by cosmic radiation. These
-                                    particularly heavy C-atoms are bound into
-                                    C0<sub>2</sub> molecules and absorbed into
-                                    plants and soil. Therefore, the C0<sub
-                                        >2</sub
-                                    >
-                                    emitted from organic sources, will also
-                                    partly consist of C14 isotopes. In fact,
-                                    also the C0<sub>2</sub> we exhale has the
-                                    same fraction of radioactive to normal C
-                                    isotopes, as we ingest them with food.
+                                    which is produced by cosmic radiation
+                                    <a
+                                        target="_blank"
+                                        href="https://www.wiley.com/en-us/Atmospheric+Chemistry+and+Physics%3A+From+Air+Pollution+to+Climate+Change%2C+3rd+Edition-p-9781118947401"
+                                        >[4]</a
+                                    >. These particularly heavy C-atoms are
+                                    bound into C0<sub>2</sub> molecules and
+                                    absorbed into plants and soil. Therefore,
+                                    the C0<sub>2</sub> emitted from organic
+                                    sources, will also partly consist of C14
+                                    isotopes. In fact, also the C0<sub>2</sub>
+                                    we exhale has the same fraction of
+                                    radioactive to normal C isotopes, as we
+                                    ingest them with food.
                                 </p>
 
                                 <p class="card-text">
@@ -1371,11 +1690,15 @@
                                 <p class="text-justify">
                                     Through measurement, it has been shown that
                                     the proportion of C0<sub>2</sub> with the
-                                    C14 isotope decreased with
-                                    industrialisation. This provides chemical
-                                    proof that the additional C0<sub>2</sub> in
-                                    the atmosphere originates from the
-                                    combustion of fossil fuels.
+                                    C14 isotope decreased with industrialisation
+                                    <a
+                                        target="_blank"
+                                        href="https://www.wiley.com/en-us/Atmospheric+Chemistry+and+Physics%3A+From+Air+Pollution+to+Climate+Change%2C+3rd+Edition-p-9781118947401"
+                                        >[4]</a
+                                    >. This provides chemical proof that the
+                                    additional C0<sub>2</sub> in the atmosphere
+                                    originates from the combustion of fossil
+                                    fuels.
                                 </p>
                             </div>
                         </div>
@@ -1386,12 +1709,25 @@
                     Besides the method of isotope analysis, other indicators
                     support anthropogenic climate change. Some gases, such as
                     most of the halocarbons, do not occur in nature and are
-                    added to the atmosphere by human activity only. Also,
-                    geographic distribution of gas concentrations around the
-                    globe shows that in the more populated Northern Hemisphere
-                    greenhouse gas concentrations are higher than average. This
-                    matches with the fact that the observed atmospheric warming
-                    is greater in these regions.
+                    added to the atmosphere by human activity only
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >. Also, geographic distribution of gas concentrations
+                    around the globe shows that in the more populated Northern
+                    Hemisphere greenhouse gas concentrations are higher than
+                    average
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    ><a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >. This matches with the fact that the observed atmospheric
+                    warming is greater in these regions.
                 </p>
                 <p class="text-justify">
                     In order to attribute the observed changes, climate
@@ -1400,7 +1736,12 @@
                     change. According to the latest IPCC report, it is more than
                     95% likely that more than half of the observed increase in
                     global average surface temperature from 1951 to 2010 was
-                    caused by the anthropogenic forcings.
+                    caused by the anthropogenic forcings
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <br />
                 <br />
@@ -1427,40 +1768,64 @@
                     surface. Local trends deviate from the calculated mean
                     trends. Until now, only predictions for temperature and
                     precipitation up to continental level are considered
-                    accurate.
+                    accurate
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     Simulations suggest that if greenhouse gases are emitted at
                     current rates or above, changes in climate until 2100 will
-                    very likely be larger than those already observed. It will
-                    become less efficient to remove excess CO2 from the
-                    atmosphere by natural processes on land and in the ocean as
-                    the planet warms. This positive carbon cycle feedback will
-                    cause global warming to accelerate. Even if net emission
-                    shrinks to zero and greenhouse gas concentrations are kept
-                    constant at current levels, climate change would continue
-                    for centuries.
+                    very likely be larger than those already observed
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >. It will become less efficient to remove excess CO2 from
+                    the atmosphere by natural processes on land and in the ocean
+                    as the planet warms. This positive carbon cycle feedback
+                    will cause global warming to accelerate. Even if net
+                    emission shrinks to zero and greenhouse gas concentrations
+                    are kept constant at current levels, climate change would
+                    continue for centuries.
                 </p>
                 <p class="text-justify">
                     For various emission scenarios, increase in global
                     temperature in comparison to preindustrial times ranges from
-                    1.8 to 4.0°C. Thereby, it will make a huge difference for
-                    the socio-economic impact of climate change if temperature
-                    rises to the lower or upper limit. Estimates of sea-level
-                    rise during the 21st century predict a range from 30 to 40
-                    cm, depending on emissions.
+                    1.8 to 4.0°C
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Thereby, it will make a huge difference for the
+                    socio-economic impact of climate change if temperature rises
+                    to the lower or upper limit. Estimates of sea-level rise
+                    during the 21st century predict a range from 30 to 40 cm,
+                    depending on emissions.
                 </p>
                 <p class="text-justify">
                     Polar regions will be severely affected, with the extent of
-                    summer sea ice in the Arctic shrinking rapidly. Greenland
-                    becoming ice free might be a tipping point that could impact
-                    sea-level rise to a large extent. However, tipping point
-                    theories are still a subject of debate among scientists.
+                    summer sea ice in the Arctic shrinking rapidly
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >. Greenland becoming ice free might be a tipping point that
+                    could impact sea-level rise to a large extent. However,
+                    tipping point theories are still a subject of debate among
+                    scientists.
                 </p>
                 <p class="text-justify">
                     In lower latitudes extreme weather events like heat waves,
                     heavy precipitation will occur more frequently and
-                    hurricanes and typhoons will become stronger.
+                    hurricanes and typhoons will become stronger
+                    <a
+                        target="_blank"
+                        href="https://www.ipcc.ch/site/assets/uploads/2018/02/WG1AR5_SPM_FINAL.pdf"
+                        >[1]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     It is safe to say that future changes in the climate system
@@ -1469,7 +1834,12 @@
                     challenge to current standard of life and to global justice.
                     However, the long-term future remains largely in our hands,
                     as we can minimise the damage of climate change by reducing
-                    emissions.
+                    emissions
+                    <a
+                        target="_blank"
+                        href="https://www.scientificamerican.com/article/science-behind-climate-change/"
+                        >[2]</a
+                    >.
                 </p>
                 <p class="text-justify">
                     To put into perspective how drastic change must be to reduce

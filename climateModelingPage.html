@@ -51,8 +51,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="climateMechanismPage.html"
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="climateMechanismPage.html"
                             >Mechanism of climate change</a
                         >
                         <div
@@ -84,6 +86,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -95,6 +99,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -106,6 +112,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -117,6 +125,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -128,6 +138,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -139,6 +151,8 @@
                             id="collapseMechanism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -148,8 +162,10 @@
                         </li>
                     </ul>
 
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="climateModelingPage.html"
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="climateModelingPage.html"
                             >Modeling the climate</a
                         >
                         <div
@@ -181,6 +197,8 @@
                             id="collapseModeling"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -192,6 +210,8 @@
                             id="collapseModeling"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -199,31 +219,93 @@
                                 >Future methods</a
                             >
                         </li>
+                    </ul>
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="personalImpactPage.html"
+                            >Personal Impact on climate change</a
+                        >
+                        <div
+                            class="nav-link px-1"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#collapsePersonal"
+                            aria-expanded="false"
+                            aria-controls="collapsePersonal"
+                            onclick="handleArrowClick(arrowPersonalImpact)"
+                        >
+                            <svg
+                                id="arrowPersonalImpact"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-caret-right-fill"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"
+                                />
+                            </svg>
+                        </div>
+                    </li>
+                    <ul class="navbar-nav ml-3">
                         <li
-                            id="collapseModeling"
+                            id="collapsePersonal"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/climateModelingPage.html#DigitalTwins"
-                                >Digital twins</a
+                                href="/personalImpactPage.html#energy"
+                                >Energy</a
                             >
                         </li>
                         <li
-                            id="collapseModeling"
+                            id="collapsePersonal"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/climateModelingPage.html#IsClimateChangeReal"
-                                >Is climate change real?</a
+                                href="/personalImpactPage.html#heating"
+                                >Heating</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#food"
+                                >Food</a
+                            >
+                        </li>
+                        <li
+                            id="collapsePersonal"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/personalImpactPage.html#transport"
+                                >Transport</a
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="carbonCapturePage.html"
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link active" href="carbonCapturePage.html"
                             >Carbon capture</a
                         >
                         <div
@@ -266,6 +348,8 @@
                             id="collapseCapture"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -277,6 +361,8 @@
                             id="collapseCapture"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -286,8 +372,8 @@
                         </li>
                     </ul>
 
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="carbonOffsetPage.html"
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link active" href="carbonOffsetPage.html"
                             >Carbon offset</a
                         >
                         <div
@@ -319,27 +405,59 @@
                             id="collapseOffset"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#whyShouldWeSupportCarbonOffset"
-                                >Why should we support carbon offset?</a
+                                href="/carbonOffsetPage.html#whatIsCarbonOffset"
+                                >What is Carbon Offset?</a
                             >
                         </li>
                         <li
                             id="collapseOffset"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/carbonOffsetPage.html#whereToBuyCarbonCredits"
-                                >Where to buy carbon credits</a
+                                href="/carbonOffsetPage.html#whyBuyCarbonOffsets"
+                                >Why Buy Carbon Offsets?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#whereCanYouBuyCarbonOffsets"
+                                >Where Can You Buy Carbon Offsets?</a
+                            >
+                        </li>
+                        <li
+                            id="collapseOffset"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/carbonOffsetPage.html#carbonOffsettingCriticisms"
+                                >Carbon Offsetting Criticisms?</a
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a class="nav-link" href="climateActivismPage.html"
+                    <li class="nav-item active d-flex">
+                        <a
+                            class="nav-link active"
+                            href="climateActivismPage.html"
                             >Climate activism</a
                         >
                         <div
@@ -371,6 +489,8 @@
                             id="collapseActivism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -382,6 +502,8 @@
                             id="collapseActivism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -393,6 +515,8 @@
                             id="collapseActivism"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
@@ -401,23 +525,21 @@
                             >
                         </li>
                     </ul>
-                    <li class="nav-item d-flex">
-                        <a
-                            class="nav-link active"
-                            href="personalImpactPage.html"
-                            >Personal Impact on climate change</a
+                    <li class="nav-item active d-flex">
+                        <a class="nav-link active" href="bibliography.html"
+                            >Bibliography</a
                         >
                         <div
                             class="nav-link px-1"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#collapsePersonal"
+                            data-target="#collapseBibliography"
                             aria-expanded="false"
-                            aria-controls="collapsePersonal"
-                            onclick="handleArrowClick(arrowPersonalImpact)"
+                            aria-controls="collapseBibliography"
+                            onclick="handleArrowClick(arrowBibliography)"
                         >
                             <svg
-                                id="arrowPersonalImpact"
+                                id="arrowBibliography"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="16"
                                 height="16"
@@ -433,47 +555,81 @@
                     </li>
                     <ul class="navbar-nav ml-3">
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#energy"
-                                >Energy</a
+                                href="/bibliography.html#mechanismOfClimateChange"
+                                >Mechanism of Climate Change</a
                             >
                         </li>
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#heating"
-                                >Heating</a
+                                href="/bibliography.html#modellingTheClimate"
+                                >Modelling the Climate</a
                             >
                         </li>
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#food"
-                                >Food</a
+                                href="/bibliography.html#personalImpactOnClimateChange"
+                                >Personal Impact on Climate Change</a
                             >
                         </li>
                         <li
-                            id="collapsePersonal"
+                            id="collapseBibliography"
                             class="collapse"
                             aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
                         >
                             <a
                                 class="nav-link"
-                                href="/personalImpactPage.html#transport"
-                                >Transport</a
+                                href="/bibliography.html#carbonCapture"
+                                >Carbon Capture</a
+                            >
+                        </li>
+                        <li
+                            id="collapseBibliography"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/bibliography.html#carbonOffset"
+                                >Carbon Offset</a
+                            >
+                        </li>
+                        <li
+                            id="collapseBibliography"
+                            class="collapse"
+                            aria-labelledby="headingTwo"
+                            data-toggle="collapse"
+                            data-target="#navbarSupportedContent"
+                        >
+                            <a
+                                class="nav-link"
+                                href="/bibliography.html#climateActivism"
+                                >Climate Activism</a
                             >
                         </li>
                     </ul>
