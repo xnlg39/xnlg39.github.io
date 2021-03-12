@@ -50,8 +50,8 @@ body a:hover {
     border-radius: 0px 0px 5px 5px;
 }
 #climateModeling__jumbotron {
-    background-image: url(./assets/climateModelling/climateModelingBannerImg.jpg);
-    background-position: center 80%;
+    background-image: url(./assets/climateModelling/climateModellingBannerImg2.jpg);
+    background-position: center 1%;
     color: white;
     height: 400px;
     border-radius: 0px 0px 5px 5px;
@@ -79,6 +79,7 @@ body a:hover {
     width: 148px;
     height: 61px;
 }
+
 .anchor {
     display: block;
     height: 60px;
